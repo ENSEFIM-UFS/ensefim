@@ -492,7 +492,22 @@ button { font: inherit; }
   margin: 0;
   max-width: 580px;
 }
-.registration-hero-art img { display: block; height: auto; width: 100%; }
+.registration-hero-art {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  max-width: 500px;
+  width: 100%;
+}
+.registration-hero-art img { display: block; height: auto; }
+.registration-fine-line { width: 100%; }
+.registration-wordmark {
+  filter: brightness(0) invert(1);
+  margin-top: clamp(18px, 2vw, 28px);
+  width: 82%;
+}
 .registration-content {
   margin: 0 auto;
   max-width: 1320px;
