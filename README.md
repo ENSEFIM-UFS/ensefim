@@ -15,3 +15,9 @@ npx serve .
 ## Próximas áreas
 
 A navegação já possui âncoras para Comissão, Programação, Palestrantes e #EuVou. Os conteúdos dessas áreas podem ser preenchidos na próxima etapa.
+
+## Segurança
+
+A página é estática e não recebe dados de visitantes. A política de segurança em index.html limita scripts, estilos, fontes e imagens às origens necessárias. Ao adicionar serviços externos, revise essa política antes de publicar.
+
+Não coloque tokens, senhas nem dados privados no HTML ou JavaScript: o código do site pode ser visto por qualquer visitante.
