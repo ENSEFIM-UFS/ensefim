@@ -14,10 +14,14 @@ npx serve .
 
 ## Próximas áreas
 
-A navegação possui âncoras para Comissão, Programação e Palestrantes. Os conteúdos dessas áreas podem ser preenchidos na próxima etapa. A opção Inscrição abre a página de cadastro do evento.
+A navegação possui âncoras para Comissão, Programação e Palestrantes. Os conteúdos dessas áreas podem ser preenchidos na próxima etapa. A opção Inscrição abre a página de cadastro, e Trabalhos científicos reúne o cronograma e as regras de submissão.
 
 ## Segurança
 
 O site é estático e não armazena dados de visitantes. As inscrições são enviadas ao Google Forms; consulte [INSCRICOES.md](INSCRICOES.md) para acompanhar e exportar as respostas. A política de segurança em index.html e inscricao.html limita scripts, estilos, fontes e imagens às origens necessárias. Ao adicionar serviços externos, revise essa política antes de publicar.
 
 Não coloque tokens, senhas nem dados privados no HTML ou JavaScript: o código do site pode ser visto por qualquer visitante.
+
+## Trabalhos científicos
+
+A página 	rabalhos.html está preparada para receber o link do formulário oficial. Enquanto o formulário não estiver disponível, os botões informam a data de abertura das submissões sem coletar dados.
