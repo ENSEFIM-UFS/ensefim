@@ -10,17 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260922-2" />
+    <link rel="stylesheet" href="styles.css?v=20260922-3" />
   </head>
-  <body class="scientific-page">
+  <body class="works-page">
     <header class="site-header">
       <a class="brand" href="index.html#inicio" aria-label="ENSEFIM - início">
         <img class="header-fine-line" src="assets/Em%20fine%20line.png" alt="Ilustração fine line do ENSEFIM" />
         <img class="brand-wordmark" src="assets/so%20a%20letra.png" alt="ENSEFIM" />
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span>
-        <b>Menu</b>
+        <span></span><span></span><b>Menu</b>
       </button>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a href="index.html#inicio">Início</a>
@@ -33,144 +32,83 @@
       </nav>
     </header>
 
-    <main>
-      <section class="scientific-hero" aria-labelledby="scientific-title">
-        <div class="scientific-hero-copy">
-          <p class="eyebrow scientific-eyebrow"><span></span> Ciência que transforma</p>
-          <h1 id="scientific-title">Trabalhos<br /><em>científicos.</em></h1>
-          <p>Confira as regras de submissão e compartilhe sua pesquisa no I Encontro Sergipano de Física Médica.</p>
+    <main class="works-main">
+      <div class="works-backdrop" aria-hidden="true">
+        <img src="assets/Em%20fine%20line.png" alt="" />
+      </div>
+
+      <article class="works-paper">
+        <p class="works-breadcrumb"><a href="index.html">Início</a><span>»</span>Trabalhos Científicos</p>
+        <h1 id="works-title">Trabalhos Científicos</h1>
+        <hr />
+
+        <div class="works-text">
+          <section id="regras">
+            <h2>Regras Gerais e Orientações</h2>
+            <p>Os interessados em submeter trabalhos para apresentação no <strong>I Encontro Sergipano de Física Médica — ENSEFIM</strong> deverão realizar a submissão por meio do formulário disponibilizado na plataforma oficial do evento, conforme o cronograma abaixo:</p>
+            <ul>
+              <li><strong>27/09/2026:</strong> início da submissão de resumos.</li>
+              <li><strong>14/10/2026:</strong> encerramento da submissão de resumos.</li>
+              <li><strong>24/10/2026:</strong> divulgação do resultado dos trabalhos selecionados.</li>
+              <li><strong>30/10/2026:</strong> prazo final para envio da versão corrigida dos resumos selecionados, quando solicitado pela Comissão Científica.</li>
+            </ul>
+            <p class="works-form-message"><strong>Formulário de submissão:</strong> será disponibilizado nesta página a partir de 27/09/2026.</p>
+          </section>
+
+          <section id="sobre-trabalhos">
+            <h2>Sobre os trabalhos</h2>
+            <p>Serão aceitos trabalhos relacionados às diferentes áreas da <strong>Física Aplicada à Medicina</strong>.</p>
+            <p>Os trabalhos poderão ser submetidos em uma das seguintes modalidades:</p>
+            <p><strong>Trabalho original:</strong> estudos que apresentem resultados decorrentes de pesquisa ou atividade desenvolvida pelos autores, incluindo estudos experimentais, computacionais, dosimétricos, tecnológicos, educacionais, de controle e garantia da qualidade, proteção radiológica, desenvolvimento ou aplicação de metodologias, entre outros.</p>
+            <p><strong>Revisão de literatura:</strong> trabalhos destinados à análise, síntese e discussão crítica do conhecimento disponível sobre determinado tema relacionado à Física Aplicada à Medicina.</p>
+            <p>Poderão submeter trabalhos <strong>estudantes de graduação, graduados, especialistas, mestres, doutores e demais profissionais ou pesquisadores</strong> com atuação ou interesse na área.</p>
+            <p>Cada autor poderá submeter <strong>apenas 1 (um) resumo como autor responsável pela submissão</strong>. Esse autor será encarregado de receber os comunicados referentes ao trabalho e deverá repassar as informações aos demais autores.</p>
+          </section>
+
+          <section id="formatacao">
+            <h2>Formatação do resumo</h2>
+            <p>O resumo deverá ser submetido <strong>obrigatoriamente em português</strong> e poderá conter, no máximo, <strong>2.500 caracteres com espaços</strong>, excluindo-se o título, os nomes dos autores e as respectivas instituições de origem. O texto deverá ser redigido de maneira clara, objetiva e concisa.</p>
+            <p>Para <strong>trabalhos originais</strong>, o resumo deverá apresentar obrigatoriamente:</p>
+            <ul>
+              <li><strong>Introdução:</strong> breve contextualização do tema e apresentação do objetivo do trabalho.</li>
+              <li><strong>Métodos:</strong> descrição dos principais procedimentos, materiais, equipamentos, métodos experimentais ou computacionais e demais estratégias utilizadas.</li>
+              <li><strong>Resultados:</strong> apresentação objetiva dos principais resultados obtidos.</li>
+              <li><strong>Conclusões:</strong> síntese das principais conclusões e da relevância do trabalho para a área.</li>
+            </ul>
+            <p>Para <strong>revisões de literatura</strong>, o resumo deverá apresentar:</p>
+            <ul>
+              <li><strong>Introdução:</strong> contextualização do tema e objetivo da revisão.</li>
+              <li><strong>Métodos:</strong> descrição da estratégia utilizada para levantamento e seleção da literatura consultada.</li>
+              <li><strong>Resultados:</strong> apresentação dos principais achados identificados na literatura analisada.</li>
+              <li><strong>Conclusões:</strong> síntese das principais considerações obtidas e de sua relevância para a área.</li>
+            </ul>
+            <p>Não será permitida a inclusão de <strong>figuras, gráficos ou tabelas no resumo submetido</strong>. Caso o trabalho seja selecionado para apresentação oral, esses recursos poderão ser utilizados na elaboração da apresentação.</p>
+          </section>
+
+          <section id="avaliacao">
+            <h2>Avaliação dos trabalhos</h2>
+            <p>Os trabalhos submetidos serão avaliados pela <strong>Comissão Científica do ENSEFIM</strong>, considerando os seguintes aspectos:</p>
+            <ul>
+              <li>clareza e organização do resumo;</li>
+              <li>relevância e atualidade do tema;</li>
+              <li>adequação à Física Aplicada à Medicina;</li>
+              <li>coerência entre objetivo, métodos, resultados e conclusões;</li>
+              <li>consistência científica e metodológica;</li>
+              <li>qualidade e relevância dos resultados ou das informações apresentadas.</li>
+            </ul>
+            <p>A divulgação dos trabalhos selecionados será realizada no dia <strong>24 de outubro de 2026</strong>. A Comissão Científica poderá solicitar correções ou adequações no resumo. Quando solicitadas, os autores deverão encaminhar a versão corrigida até o dia <strong>30 de outubro de 2026</strong>.</p>
+          </section>
+
+          <section id="apresentacao">
+            <h2>Apresentação dos trabalhos</h2>
+            <p>Os trabalhos selecionados serão apresentados <strong>exclusivamente em formato oral</strong> durante o I Encontro Sergipano de Física Médica.</p>
+            <p>Cada trabalho terá <strong>10 minutos no total</strong>, sendo <strong>7 minutos para apresentação</strong> e <strong>3 minutos para perguntas e discussão</strong>.</p>
+            <p>A apresentação poderá conter figuras, tabelas, gráficos, imagens e demais recursos visuais que auxiliem na exposição e compreensão do trabalho. Recomenda-se que os autores organizem a apresentação de maneira objetiva, contemplando contextualização, objetivo, metodologia, resultados e conclusões.</p>
+          </section>
         </div>
-        <div class="scientific-hero-mark" aria-hidden="true">
-          <span>Trabalhos</span>
-          <strong>científicos</strong>
-          <small>ENSEFIM · 2026</small>
-        </div>
-      </section>
-
-      <section class="scientific-content">
-        <p class="scientific-breadcrumb"><a href="index.html">Início</a><span>›</span>Trabalhos científicos</p>
-        <div class="scientific-intro">
-          <div>
-            <p class="eyebrow eyebrow-dark"><span></span> Chamada de trabalhos</p>
-            <h2>Regras e<br /><em>orientações.</em></h2>
-          </div>
-          <div class="submission-status">
-            <span>Submissões a partir de</span>
-            <strong>27.09.2026</strong>
-            <p>O formulário oficial será disponibilizado nesta página.</p>
-            <span class="submission-button-disabled" aria-disabled="true">Formulário em breve</span>
-          </div>
-        </div>
-
-        <div class="scientific-deadlines" aria-label="Cronograma de submissão">
-          <article><time datetime="2026-09-27">27/09</time><span>Início da submissão de resumos</span></article>
-          <article><time datetime="2026-10-14">14/10</time><span>Encerramento das submissões</span></article>
-          <article><time datetime="2026-10-24">24/10</time><span>Resultado dos trabalhos selecionados</span></article>
-          <article><time datetime="2026-10-30">30/10</time><span>Envio final das versões corrigidas</span></article>
-        </div>
-
-        <div class="scientific-layout">
-          <aside class="scientific-index" aria-label="Nesta página">
-            <span>Nesta página</span>
-            <a href="#regras">Regras gerais</a>
-            <a href="#sobre-trabalhos">Sobre os trabalhos</a>
-            <a href="#formatacao">Formatação do resumo</a>
-            <a href="#avaliacao">Avaliação</a>
-            <a href="#apresentacao">Apresentação</a>
-          </aside>
-
-          <article class="scientific-article">
-            <section id="regras">
-              <span class="scientific-section-number">01</span>
-              <h2>Regras Gerais e Orientações</h2>
-              <p>Os interessados em submeter trabalhos para apresentação no <strong>I Encontro Sergipano de Física Médica — ENSEFIM</strong> deverão realizar a submissão por meio do formulário oficial do evento, conforme o cronograma apresentado nesta página.</p>
-            </section>
-
-            <section id="sobre-trabalhos">
-              <span class="scientific-section-number">02</span>
-              <h2>Sobre os trabalhos</h2>
-              <p>Serão aceitos trabalhos relacionados às diferentes áreas da <strong>Física Aplicada à Medicina</strong>.</p>
-              <div class="modality-grid">
-                <article>
-                  <span>Modalidade 01</span>
-                  <h3>Trabalho original</h3>
-                  <p>Estudos com resultados de pesquisa ou atividade desenvolvida pelos autores, incluindo estudos experimentais, computacionais, dosimétricos, tecnológicos, educacionais, controle e garantia da qualidade, proteção radiológica e aplicação de metodologias.</p>
-                </article>
-                <article>
-                  <span>Modalidade 02</span>
-                  <h3>Revisão de literatura</h3>
-                  <p>Análise, síntese e discussão crítica do conhecimento disponível sobre tema relacionado à Física Aplicada à Medicina.</p>
-                </article>
-              </div>
-              <p>Poderão submeter trabalhos <strong>estudantes de graduação, graduados, especialistas, mestres, doutores e demais profissionais ou pesquisadores</strong> com atuação ou interesse na área.</p>
-              <div class="scientific-note"><strong>Importante</strong><p>Cada autor poderá submeter apenas <strong>1 (um) resumo</strong> como responsável. Esse autor receberá os comunicados e deverá repassar as informações aos demais autores.</p></div>
-            </section>
-
-            <section id="formatacao">
-              <span class="scientific-section-number">03</span>
-              <h2>Formatação do resumo</h2>
-              <p>O resumo deverá ser submetido <strong>obrigatoriamente em português</strong> e poderá conter, no máximo, <strong>2.500 caracteres com espaços</strong>, excluindo título, nomes dos autores e instituições de origem. O texto deverá ser claro, objetivo e conciso.</p>
-              <div class="format-columns">
-                <article>
-                  <h3>Trabalhos originais</h3>
-                  <dl>
-                    <div><dt>Introdução</dt><dd>Contextualização do tema e objetivo do trabalho.</dd></div>
-                    <div><dt>Métodos</dt><dd>Procedimentos, materiais, equipamentos e estratégias utilizadas.</dd></div>
-                    <div><dt>Resultados</dt><dd>Apresentação objetiva dos principais resultados obtidos.</dd></div>
-                    <div><dt>Conclusões</dt><dd>Síntese das conclusões e da relevância para a área.</dd></div>
-                  </dl>
-                </article>
-                <article>
-                  <h3>Revisões de literatura</h3>
-                  <dl>
-                    <div><dt>Introdução</dt><dd>Contextualização do tema e objetivo da revisão.</dd></div>
-                    <div><dt>Métodos</dt><dd>Estratégia de levantamento e seleção da literatura.</dd></div>
-                    <div><dt>Resultados</dt><dd>Principais achados da literatura analisada.</dd></div>
-                    <div><dt>Conclusões</dt><dd>Considerações obtidas e relevância para a área.</dd></div>
-                  </dl>
-                </article>
-              </div>
-              <div class="scientific-alert"><strong>Sem elementos gráficos no resumo</strong><p>Não será permitida a inclusão de figuras, gráficos ou tabelas. Caso o trabalho seja selecionado para apresentação oral, esses recursos poderão ser utilizados nos slides.</p></div>
-            </section>
-
-            <section id="avaliacao">
-              <span class="scientific-section-number">04</span>
-              <h2>Avaliação dos trabalhos</h2>
-              <p>Os trabalhos serão avaliados pela <strong>Comissão Científica do ENSEFIM</strong>, considerando:</p>
-              <ul class="criteria-list">
-                <li>clareza e organização do resumo;</li>
-                <li>relevância e atualidade do tema;</li>
-                <li>adequação à Física Aplicada à Medicina;</li>
-                <li>coerência entre objetivo, métodos, resultados e conclusões;</li>
-                <li>consistência científica e metodológica;</li>
-                <li>qualidade e relevância dos resultados ou informações apresentadas.</li>
-              </ul>
-              <p>Os trabalhos selecionados serão divulgados em <strong>24 de outubro de 2026</strong>. A Comissão Científica poderá solicitar correções; quando isso ocorrer, a versão corrigida deverá ser enviada até <strong>30 de outubro de 2026</strong>.</p>
-            </section>
-
-            <section id="apresentacao">
-              <span class="scientific-section-number">05</span>
-              <h2>Apresentação dos trabalhos</h2>
-              <p>Os trabalhos selecionados serão apresentados <strong>exclusivamente em formato oral</strong> durante o I Encontro Sergipano de Física Médica.</p>
-              <div class="presentation-time">
-                <div><strong>7</strong><span>minutos<br />para apresentação</span></div>
-                <span>+</span>
-                <div><strong>3</strong><span>minutos<br />para perguntas</span></div>
-                <span>=</span>
-                <div><strong>10</strong><span>minutos<br />no total</span></div>
-              </div>
-              <p>A apresentação poderá conter figuras, tabelas, gráficos, imagens e outros recursos visuais. Recomenda-se uma exposição objetiva, contemplando contextualização, objetivo, metodologia, resultados e conclusões.</p>
-            </section>
-          </article>
-        </div>
-
-        <div class="scientific-final-cta">
-          <div><span>Prepare seu resumo</span><h2>Sua pesquisa merece<br />ser compartilhada.</h2></div>
-          <span class="submission-button-disabled submission-button-light" aria-disabled="true">Abre em 27/09/2026</span>
-        </div>
-        <a class="registration-back" href="index.html#evento">← Voltar para o site</a>
-      </section>
+      </article>
     </main>
+
     <footer class="scientific-footer">
       <div class="scientific-footer-landscape">
         <img src="assets/rodape.png" alt="Paisagem ilustrada de Sergipe com ponte, monumentos e pôr do sol" />
@@ -181,7 +119,7 @@
           <p>I Encontro Sergipano de Física Médica</p>
         </div>
         <p>06 e 07 de novembro de 2026<br />Universidade Federal de Sergipe</p>
-        <a href="#scientific-title">Voltar ao topo ↑</a>
+        <a href="#works-title">Voltar ao topo ↑</a>
       </div>
     </footer>
     <script src="script.js"></script>

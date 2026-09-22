@@ -15,9 +15,10 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
 
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
+const scrollSpyLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
 
 const updateActiveLink = () => {
-  if (sections.length === 0) return;
+  if (sections.length === 0 || scrollSpyLinks.length === 0) return;
   const scrollPosition = window.scrollY + 140;
   let activeId = 'inicio';
 
@@ -25,7 +26,7 @@ const updateActiveLink = () => {
     if (scrollPosition >= section.offsetTop) activeId = section.id;
   });
 
-  navLinks.forEach((link) => {
+  scrollSpyLinks.forEach((link) => {
     link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
   });
 };
