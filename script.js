@@ -17,6 +17,7 @@ const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
 
 const updateActiveLink = () => {
+  if (sections.length === 0) return;
   const scrollPosition = window.scrollY + 140;
   let activeId = 'inicio';
 

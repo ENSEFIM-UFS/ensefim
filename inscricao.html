@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Informações sobre as inscrições para o I Encontro Sergipano de Física Médica, em 06 e 07 de novembro de 2026 na UFS." />
+    <title>Inscrição | ENSEFIM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="registration-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#inicio" aria-label="ENSEFIM - início">
+        <img class="header-fine-line" src="assets/Em%20fine%20line.png" alt="Ilustração fine line do ENSEFIM" />
+        <img class="brand-wordmark" src="assets/so%20a%20letra.png" alt="ENSEFIM" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+        <b>Menu</b>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#evento">O evento</a>
+        <a href="index.html#comissao">Comissão</a>
+        <a href="index.html#programacao">Programação</a>
+        <a href="index.html#palestrantes">Palestrantes</a>
+        <a class="nav-cta active" href="inscricao.html" aria-current="page">Inscrição <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="registration-hero" aria-labelledby="registration-title">
+        <div class="registration-hero-inner">
+          <div>
+            <p class="eyebrow"><span></span> I Encontro Sergipano de Física Médica</p>
+            <h1 id="registration-title">Sua jornada<br />começa <em>aqui.</em></h1>
+            <p class="registration-hero-copy">Inscreva-se para aprender, trocar experiências e conhecer as possibilidades da Física Médica.</p>
+          </div>
+          <div class="registration-hero-art">
+            <img src="assets/ENSEFIM.png" alt="Identidade visual do ENSEFIM" />
+          </div>
+        </div>
+      </section>
+
+      <section class="registration-content" aria-labelledby="registration-section-title">
+        <div class="registration-layout">
+          <div class="registration-panel">
+            <p class="eyebrow eyebrow-dark"><span></span> Participe do encontro</p>
+            <h2 id="registration-section-title">Inscrição<span class="title-dot">.</span></h2>
+            <p>O ENSEFIM reúne estudantes e profissionais para dois dias de conversas sobre ciência, carreira e saúde. As informações para inscrição ficarão reunidas nesta página.</p>
+            <div class="registration-steps" aria-label="Etapas da inscrição">
+              <div><span>01</span><p>Preencha seus dados no formulário de inscrição.</p></div>
+              <div><span>02</span><p>Confira as informações antes de enviar.</p></div>
+              <div><span>03</span><p>Guarde a confirmação para acompanhar sua participação.</p></div>
+            </div>
+            <div class="registration-action" aria-live="polite">
+              <span class="registration-badge">Em preparação</span>
+              <h3>As inscrições serão abertas em breve.</h3>
+              <p>O botão de inscrição ficará disponível aqui assim que o formulário da organização for publicado no Google Forms.</p>
+              <span class="registration-button registration-button-disabled">Inscrições em breve</span>
+            </div>
+          </div>
+          <aside class="registration-aside" aria-label="Informações do evento">
+            <div class="registration-detail">
+              <span class="registration-detail-label">Quando</span>
+              <strong>06 e 07<br />novembro de 2026</strong>
+            </div>
+            <div class="registration-detail">
+              <span class="registration-detail-label">Onde</span>
+              <strong>Universidade Federal de Sergipe</strong>
+              <p>São Cristóvão, Sergipe</p>
+            </div>
+            <div class="registration-detail">
+              <span class="registration-detail-label">Para quem</span>
+              <strong>Estudantes e profissionais</strong>
+              <p>Interessados nas diferentes áreas da Física Médica.</p>
+            </div>
+            <img src="assets/so%20a%20letra.png" alt="" aria-hidden="true" />
+          </aside>
+        </div>
+        <a class="registration-back" href="index.html#evento">← Voltar para o site</a>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
