@@ -1262,6 +1262,13 @@ button { font: inherit; }
 }
 .works-template a:hover { background: #ffc157; }
 .works-template span { font-size: 1.15rem; line-height: .6; }
+.works-form-message a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.works-form-message a:hover { color: #bd6e00; }
 
 @media (max-width: 900px) {
   .works-backdrop { height: 285px; }
