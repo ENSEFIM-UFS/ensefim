@@ -1247,6 +1247,21 @@ button { font: inherit; }
 .works-text li::marker { color: var(--orange); }
 .works-text strong { color: var(--navy); font-weight: 700; }
 .works-form-message { border-left: 4px solid var(--orange); margin-top: 30px !important; padding: 10px 0 10px 20px; }
+.works-template { margin: 24px 0 30px !important; }
+.works-template a {
+  align-items: center;
+  background: var(--orange);
+  border-radius: 999px;
+  color: var(--navy);
+  display: inline-flex;
+  font-size: .84rem;
+  font-weight: 700;
+  gap: 14px;
+  line-height: 1;
+  padding: 14px 20px;
+}
+.works-template a:hover { background: #ffc157; }
+.works-template span { font-size: 1.15rem; line-height: .6; }
 
 @media (max-width: 900px) {
   .works-backdrop { height: 285px; }
