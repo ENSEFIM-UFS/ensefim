@@ -418,7 +418,11 @@ button { font: inherit; }
 .topic-icon-pesquisa { background-position: -46px -360px; }
 .topic-icon-protecao { background-position: -192px -360px; }
 .topic-icon-tecnologia { background-position: -340px -360px; }
-.topic-icon-educacao { background-position: -491px -360px; }
+.topic-icon-educacao {
+  background-position: -491px -360px;
+  height: 55px;
+  margin-bottom: 10px;
+}
 .topic-icon-gestao { background-position: -632px -360px; }
 
 .date-section { border-radius: 48px 48px 0 0; height: clamp(660px, 58vw, 850px); }
