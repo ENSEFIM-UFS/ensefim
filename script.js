@@ -98,7 +98,7 @@ const speakers = {
   },
   william: {
     name: 'Prof. Dr. William de Souza Santos',
-    role: 'Professor e pesquisador · UFS',
+    role: 'Físico Médico · Professor e pesquisador · UFS',
     photo: 'assets/palestrantes/william.png',
     lattes: 'https://lattes.cnpq.br/5150139546603006',
     talk: 'Monte Carlo na Física Médica: Dosimetria, Imagem e Proteção Radiológica',
