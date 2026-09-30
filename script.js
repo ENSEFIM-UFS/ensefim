@@ -63,7 +63,7 @@ const speakers = {
   },
   caroline: {
     name: 'Caroline Fernandes',
-    role: 'Física Médica · Clinradi',
+    role: 'Física Médica · Medicina Nuclear · Clinradi',
     photo: 'assets/palestrantes/caroline.png',
     lattes: 'https://lattes.cnpq.br/8983669336500082',
     talk: 'Visita Técnica na Medicina Nuclear.',
