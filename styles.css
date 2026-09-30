@@ -1314,7 +1314,7 @@ body.speaker-dialog-open { overflow: hidden; }
 .speaker-profile { display: grid; grid-template-columns: minmax(180px, 30%) minmax(0, 1fr); gap: 36px; padding: 0 40px 40px; align-items: start; }
 .speaker-photo { width: 100%; height: auto; }
 .speaker-details h2 { font-family: var(--display); font-size: clamp(1.5rem, 2.8vw, 2.3rem); letter-spacing: -.04em; line-height: 1.15; margin: 16px 0 12px; }
-.speaker-role { color: var(--blue); font-weight: 500; line-height: 1.5; margin: 0 0 26px; }
+.speaker-role { color: var(--blue); font-weight: 500; line-height: 1.5; margin: 0 0 26px; white-space: pre-line; }
 .speaker-details h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 12px; }
 .speaker-bio p { color: #3e5a6d; line-height: 1.7; margin: 0 0 16px; }
 .speaker-lattes { display: inline-flex; align-items: center; gap: 18px; background: var(--orange); color: var(--navy); padding: 14px 20px; border-radius: 30px; font-size: .88rem; font-weight: 700; margin-top: 6px; }
