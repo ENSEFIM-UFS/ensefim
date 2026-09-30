@@ -35,6 +35,32 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  cassio: {
+    name: 'Dr. Cássio Costa',
+    role: 'Físico médico · HU/UFS',
+    photo: 'assets/palestrantes/cassio.png',
+    lattes: 'http://lattes.cnpq.br/5607878675613649',
+    talkType: 'Mesa redonda',
+    talk: 'Raios X no leito é realmente necessário?',
+    bio: [
+      'Graduado em Física Médica pela Universidade Federal de Sergipe (2004), doutor em Física pela UFS (2010), com pós-doutorado em Física (2011). Sua principal linha de pesquisa é dosimetria em tomografia computadorizada. Atua também em dosimetria numérica, radiodiagnóstico e controle de qualidade.',
+      'Especialista em Física do Radiodiagnóstico pela ABFM, atuando como físico médico clínico em diversas clínicas e hospitais.',
+      'Atualmente é Físico Médico da Unidade de Diagnóstico por Imagem do HU/UFS, Supervisor de Proteção Radiológica do HU/UFS e coordenador da Residência em Física Médica do Radiodiagnóstico do HU/UFS.'
+    ]
+  },
+  marcela: {
+    name: 'Ma. Marcela Costa',
+    role: 'Física médica · HU/UFS/EBSERH',
+    photo: 'assets/palestrantes/marcela.png',
+    lattes: 'http://lattes.cnpq.br/4020200067609938',
+    talkType: 'Mesa redonda',
+    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
+    bio: [
+      'Graduada em Física Médica pela Universidade Federal de Sergipe – UFS (2007). Mestra em Tecnologia Nuclear pelo Instituto de Pesquisas Energéticas e Nucleares – IPEN/USP (2009).',
+      'Supervisora de Radioproteção em Medidores Nucleares (CNEN MN-1234). Especialista em Física do Radiodiagnóstico pela ABFM.',
+      'Atualmente exerce sua atividade como Física Médica no Hospital Universitário de Sergipe (HU/UFS/EBSERH), inclusive desempenhando a função de preceptora da residência multiprofissional em Física Médica do HU/UFS. Também exerce a função de Diretora da MCA – Soluções em Radioproteção e Radiodiagnóstico.'
+    ]
+  },
   caroline: {
     name: 'Caroline Fernandes',
     role: 'Física Médica · Clinradi',
@@ -124,6 +150,7 @@ if (speakerDialog) {
         photo.alt = '';
       }
       document.querySelector('#speaker-lattes').href = speaker.lattes;
+      document.querySelector('#speaker-talk-type').textContent = speaker.talkType || 'Palestra';
       document.querySelector('#speaker-talk-title').textContent = speaker.talk;
       const subtitle = document.querySelector('#speaker-talk-subtitle');
       subtitle.textContent = speaker.subtitle || '';

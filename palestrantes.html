@@ -40,6 +40,18 @@
           <p>Conheça quem vai compartilhar conhecimento e experiências no ENSEFIM.</p>
         </div>
         <div class="speakers-grid">
+          <button class="speaker-card" type="button" data-speaker="cassio" aria-haspopup="dialog" aria-controls="speaker-dialog">
+            <img src="assets/palestrantes/cassio.png" alt="" width="486" height="500" loading="lazy" />
+            <strong>Dr. Cássio Costa</strong>
+            <span class="speaker-profession">Físico médico · HU/UFS</span>
+            <span class="speaker-card-action">Conheça o palestrante <span aria-hidden="true">→</span></span>
+          </button>
+          <button class="speaker-card" type="button" data-speaker="marcela" aria-haspopup="dialog" aria-controls="speaker-dialog">
+            <img src="assets/palestrantes/marcela.png" alt="" width="486" height="500" loading="lazy" />
+            <strong>Ma. Marcela Costa</strong>
+            <span class="speaker-profession">Física médica · HU/UFS/EBSERH</span>
+            <span class="speaker-card-action">Conheça a palestrante <span aria-hidden="true">→</span></span>
+          </button>
           <button class="speaker-card" type="button" data-speaker="caroline" aria-haspopup="dialog" aria-controls="speaker-dialog">
             <img src="assets/palestrantes/caroline.png" alt="" width="486" height="500" loading="lazy" />
             <strong>Caroline Fernandes</strong>
@@ -81,7 +93,7 @@
             <div class="speaker-bio" id="speaker-bio"></div>
             <a class="speaker-lattes" id="speaker-lattes" target="_blank" rel="noopener noreferrer">Ver currículo Lattes <span aria-hidden="true">↗</span><span class="speaker-sr-only"> (abre em nova aba)</span></a>
             <div class="speaker-talk">
-              <h3>Palestra</h3>
+              <h3 id="speaker-talk-type">Palestra</h3>
               <p id="speaker-talk-title"></p>
               <p class="speaker-talk-subtitle" id="speaker-talk-subtitle" hidden></p>
               <p class="speaker-time"><strong>Horário:</strong> a confirmar</p>
@@ -91,6 +103,6 @@
       </dialog>
 
     </main>
-    <script src="script.js?v=20260930-7"></script>
+    <script src="script.js?v=20260930-8"></script>
   </body>
 </html>
