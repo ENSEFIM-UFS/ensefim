@@ -50,7 +50,7 @@ const speakers = {
   },
   marcela: {
     name: 'Ma. Marcela Costa',
-    role: 'Física médica · HU/UFS/EBSERH',
+    role: 'Física médica · Radiodiagnóstico · HU-UFS/EBSERH',
     photo: 'assets/palestrantes/marcela.png',
     lattes: 'http://lattes.cnpq.br/4020200067609938',
     talkType: 'Mesa redonda',
