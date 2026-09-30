@@ -37,20 +37,20 @@ updateActiveLink();
 const speakers = {
   cassio: {
     name: 'Dr. Cássio Costa',
-    role: 'Físico médico · Radiodiagnóstico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
+    role: 'Físico Médico · Radiodiagnóstico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
     photo: 'assets/palestrantes/cassio.png',
     lattes: 'http://lattes.cnpq.br/5607878675613649',
     talkType: 'Mesa redonda',
     talk: 'Raios X no leito é realmente necessário?',
     bio: [
       'Graduado em Física Médica pela Universidade Federal de Sergipe (2004), doutor em Física pela UFS (2010), com pós-doutorado em Física (2011). Sua principal linha de pesquisa é dosimetria em tomografia computadorizada. Atua também em dosimetria numérica, radiodiagnóstico e controle de qualidade.',
-      'Especialista em Física do Radiodiagnóstico pela ABFM, atuando como físico médico clínico em diversas clínicas e hospitais.',
+      'Especialista em Física do Radiodiagnóstico pela ABFM, atuando como Físico Médico clínico em diversas clínicas e hospitais.',
       'Atualmente é Físico Médico da Unidade de Diagnóstico por Imagem do HU/UFS, Supervisor de Proteção Radiológica do HU/UFS e coordenador da Residência em Física Médica do Radiodiagnóstico do HU/UFS.'
     ]
   },
   marcela: {
     name: 'Ma. Marcela Costa',
-    role: 'Física médica · Radiodiagnóstico · HU-UFS/EBSERH',
+    role: 'Física Médica · Radiodiagnóstico · HU-UFS/EBSERH',
     photo: 'assets/palestrantes/marcela.png',
     lattes: 'http://lattes.cnpq.br/4020200067609938',
     talkType: 'Mesa redonda',
@@ -76,7 +76,7 @@ const speakers = {
   },
   danillo: {
     name: 'Me. Danillo Menezes',
-    role: 'Físico médico · Radiodiagnóstico · HUL-UFS/EBSERH',
+    role: 'Físico Médico · Radiodiagnóstico · HUL-UFS/EBSERH',
     photo: 'assets/palestrantes/danillo.png',
     lattes: 'https://lattes.cnpq.br/7799351098704346',
     talk: 'Gestão da Proteção Radiológica em Serviços de Saúde',
