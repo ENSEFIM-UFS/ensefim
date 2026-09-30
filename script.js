@@ -37,7 +37,7 @@ updateActiveLink();
 const speakers = {
   cassio: {
     name: 'Dr. Cássio Costa',
-    role: 'Físico médico · HU/UFS/EBSERH\nCoordenador da Residência HU/UFS',
+    role: 'Físico médico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
     photo: 'assets/palestrantes/cassio.png',
     lattes: 'http://lattes.cnpq.br/5607878675613649',
     talkType: 'Mesa redonda',
