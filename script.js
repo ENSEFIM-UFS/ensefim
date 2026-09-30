@@ -33,3 +33,80 @@ const updateActiveLink = () => {
 
 window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
+
+const speakers = {
+  danillo: {
+    name: 'Me. Danillo Menezes',
+    role: 'Físico médico · HUL-UFS/EBSERH',
+    photo: 'assets/palestrantes/danillo.png',
+    lattes: 'https://lattes.cnpq.br/7799351098704346',
+    talk: 'Gestão da Proteção Radiológica em Serviços de Saúde',
+    bio: [
+      'Físico Médico da Unidade de Diagnóstico por Imagem do Hospital Universitário de Lagarto (HUL-UFS/EBSERH) e sócio do Instituto de Física Médica (IFM).',
+      'Graduado em Física Médica pela UFS, mestre em Tecnologia Nuclear pela UFPE e especialista em Física Médica – Imagem pelo INCA.'
+    ]
+  },
+  fabinara: {
+    name: 'Ma. Fabinara Dantas',
+    role: 'Perita criminal · Polícia Científica de Sergipe',
+    photo: 'assets/palestrantes/fabinara.png',
+    lattes: 'https://lattes.cnpq.br/4770001264896347',
+    talk: 'Da Física à Perícia Criminal: como a ciência ajuda a desvendar crimes',
+    bio: [
+      'Possui graduação em Física – Licenciatura pelo Instituto Federal de Educação, Ciência e Tecnologia do Sertão Pernambucano (2012) e mestrado em Física pela Universidade Federal de Sergipe (2015).',
+      'Perita Criminal da Polícia Científica do Estado de Sergipe desde 2015. Atua no Laboratório de Balística Forense do Instituto de Criminalística. Instrutora da Academia de Polícia Civil de Sergipe e professora colaboradora da Pós-Graduação em Perícia Criminal e Ciências Forenses da Universidade Tiradentes, em Aracaju.'
+    ]
+  },
+  william: {
+    name: 'Prof. Dr. William de Souza Santos',
+    role: 'Professor e pesquisador · UFS',
+    photo: 'assets/palestrantes/william.png',
+    lattes: 'https://lattes.cnpq.br/5150139546603006',
+    talk: 'Monte Carlo na Física Médica: Dosimetria, Imagem e Proteção Radiológica',
+    bio: [
+      'Professor Adjunto da Universidade Federal de Sergipe (UFS) e bolsista de produtividade do CNPq (PQ Nível C). Atua também na Residência em Física Médica em Radiodiagnóstico do Hospital Universitário (HU-UFS) e como docente permanente nos Programas de Pós-Graduação em Física (UFS) e em Engenharia Biomédica (PPGEB/UFU).',
+      'É licenciado em Física pela UESB (2007), mestre (2010) e doutor (2014) pela UFS, com três pós-doutorados realizados no IPEN/USP. É líder do grupo de pesquisa Ionizing Radiation Dosimetry in Medicine e participa de projetos de pesquisa nacionais e internacionais em Física Médica.',
+      'Possui experiência na orientação de alunos de graduação e pós-graduação nas áreas de Física Médica e Física Ambiental, atuando principalmente em dosimetria em radiodiagnóstico, dosimetria numérica e ambiental, proteção radiológica e simulação Monte Carlo.'
+    ]
+  }
+};
+
+const speakerDialog = document.querySelector('#speaker-dialog');
+
+if (speakerDialog) {
+  let speakerTrigger;
+  document.querySelectorAll('[data-speaker]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const speaker = speakers[button.dataset.speaker];
+      if (!speaker) return;
+      speakerTrigger = button;
+      document.querySelector('#speaker-name').textContent = speaker.name;
+      document.querySelector('#speaker-role').textContent = speaker.role;
+      const photo = document.querySelector('#speaker-photo');
+      photo.src = speaker.photo;
+      photo.alt = speaker.name;
+      document.querySelector('#speaker-lattes').href = speaker.lattes;
+      document.querySelector('#speaker-talk-title').textContent = speaker.talk;
+      document.querySelector('#speaker-bio').replaceChildren(...speaker.bio.map((text) => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = text;
+        return paragraph;
+      }));
+      speakerDialog.showModal();
+      speakerDialog.scrollTop = 0;
+      document.body.classList.add('speaker-dialog-open');
+    });
+  });
+
+  speakerDialog.querySelector('.speaker-close').addEventListener('click', () => speakerDialog.close());
+  speakerDialog.addEventListener('click', (event) => {
+    const bounds = speakerDialog.getBoundingClientRect();
+    if (event.target === speakerDialog &&
+        (event.clientX < bounds.left || event.clientX > bounds.right ||
+         event.clientY < bounds.top || event.clientY > bounds.bottom)) speakerDialog.close();
+  });
+  speakerDialog.addEventListener('close', () => {
+    document.body.classList.remove('speaker-dialog-open');
+    speakerTrigger?.focus({ preventScroll: true });
+  });
+}
