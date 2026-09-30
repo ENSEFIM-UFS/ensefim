@@ -39,6 +39,7 @@ const speakers = {
     name: 'Dra. Izabela Teles',
     role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
     photo: 'assets/palestrantes/izabela.png',
+    lattes: 'http://lattes.cnpq.br/5643734964129586',
     talkType: 'Mesa redonda',
     talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
     bio: [
