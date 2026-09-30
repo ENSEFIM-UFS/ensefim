@@ -38,7 +38,7 @@ const speakers = {
   caroline: {
     name: 'Caroline Fernandes',
     role: 'Física Médica da Clinradi Imagem',
-    initials: 'CF',
+    photo: 'assets/palestrantes/caroline.png',
     lattes: 'https://lattes.cnpq.br/8983669336500082',
     talk: 'Visita Técnica na Medicina Nuclear.',
     subtitle: 'Física Médica responsável pela Visita Técnica à área de Medicina Nuclear da CLINRAD, conduzindo os participantes pelo serviço e apresentando, na prática, a rotina, os equipamentos e as principais aplicações da Física Médica no setor.',
