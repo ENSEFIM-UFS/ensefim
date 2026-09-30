@@ -1346,4 +1346,4 @@ body.speaker-dialog-open { overflow: hidden; }
 .speaker-placeholder { display: grid; place-items: center; width: 100%; aspect-ratio: 486 / 500; border-radius: 50%; background: #e2eef0; color: var(--blue); font-family: var(--display); font-size: clamp(3rem, 6vw, 5rem); font-weight: 700; }
 .speaker-card > .speaker-placeholder { margin-bottom: 24px; }
 .speaker-talk .speaker-talk-subtitle { color: #3e5a6d; font-size: .95rem; margin-top: 12px; line-height: 1.65; }
-.speaker-placeholder[hidden], .speaker-photo[hidden], .speaker-talk-subtitle[hidden] { display: none; }
+.speaker-placeholder[hidden], .speaker-photo[hidden], .speaker-talk-subtitle[hidden], .speaker-lattes[hidden] { display: none; }

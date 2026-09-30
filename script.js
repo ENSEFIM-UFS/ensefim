@@ -35,6 +35,18 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  izabela: {
+    name: 'Dra. Izabela Teles',
+    role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
+    photo: 'assets/palestrantes/izabela.png',
+    talkType: 'Mesa redonda',
+    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
+    bio: [
+      'Graduada em Física Médica pela Universidade Federal de Sergipe. Mestrado e doutorado pelo IPEN/USP. Residência em Radioterapia pela Unicamp.',
+      'Supervisora em Proteção Radiológica pela CNEN e especialista em Radioterapia pela ABFM e CNEN.',
+      'Atualmente é física responsável pelo setor de Radioterapia do Hospital do Amor da unidade de Lagarto.'
+    ]
+  },
   cassio: {
     name: 'Dr. Cássio Costa',
     role: 'Físico Médico · Radiodiagnóstico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
@@ -149,7 +161,13 @@ if (speakerDialog) {
         photo.removeAttribute('src');
         photo.alt = '';
       }
-      document.querySelector('#speaker-lattes').href = speaker.lattes;
+      const lattes = document.querySelector('#speaker-lattes');
+      lattes.hidden = !speaker.lattes;
+      if (speaker.lattes) {
+        lattes.href = speaker.lattes;
+      } else {
+        lattes.removeAttribute('href');
+      }
       document.querySelector('#speaker-talk-type').textContent = speaker.talkType || 'Palestra';
       document.querySelector('#speaker-talk-title').textContent = speaker.talk;
       const subtitle = document.querySelector('#speaker-talk-subtitle');
