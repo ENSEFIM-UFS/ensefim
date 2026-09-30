@@ -84,6 +84,22 @@ const speakers = {
   }
 };
 
+// Ordena pelo nome, preservando os títulos apenas na apresentação.
+const speakerSortName = (name) => name.trim().replace(
+  /^(?:(?:professor(?:a)?|prof(?:a|ª|º)?|doutor(?:a)?|dr(?:a|ª|º)?|mestre|mestra|me|ma|ms|msc|esp)\.?\s+)+/iu,
+  ''
+);
+const speakerGrid = document.querySelector('.speakers-grid');
+if (speakerGrid) {
+  const collator = new Intl.Collator('pt-BR', { sensitivity: 'base' });
+  const cards = [...speakerGrid.querySelectorAll('[data-speaker]')];
+  const nameForCard = (card) => speakerSortName(
+    speakers[card.dataset.speaker]?.name || card.querySelector('strong').textContent
+  );
+  cards.sort((a, b) => collator.compare(nameForCard(a), nameForCard(b)));
+  speakerGrid.append(...cards);
+}
+
 const speakerDialog = document.querySelector('#speaker-dialog');
 
 if (speakerDialog) {
