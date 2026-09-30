@@ -76,7 +76,7 @@ const speakers = {
   },
   danillo: {
     name: 'Me. Danillo Menezes',
-    role: 'Físico médico · HUL-UFS/EBSERH',
+    role: 'Físico médico · Radiodiagnóstico · HUL-UFS/EBSERH',
     photo: 'assets/palestrantes/danillo.png',
     lattes: 'https://lattes.cnpq.br/7799351098704346',
     talk: 'Gestão da Proteção Radiológica em Serviços de Saúde',
