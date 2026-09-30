@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260930-2" />
+    <link rel="stylesheet" href="styles.css?v=20260930-3" />
   </head>
   <body class="speakers-page">
     <header class="site-header">
@@ -58,6 +58,12 @@
             <span class="speaker-profession">Professor e pesquisador · UFS</span>
             <span class="speaker-card-action">Conheça o palestrante <span aria-hidden="true">→</span></span>
           </button>
+          <button class="speaker-card" type="button" data-speaker="caroline" aria-haspopup="dialog" aria-controls="speaker-dialog">
+            <span class="speaker-placeholder" aria-hidden="true">CF</span>
+            <strong>Caroline Fernandes</strong>
+            <span class="speaker-profession">Física Médica da Clinradi Imagem</span>
+            <span class="speaker-card-action">Conheça a palestrante <span aria-hidden="true">→</span></span>
+          </button>
         </div>
         <p class="speakers-note">Novos palestrantes serão anunciados em breve.</p>
       </section>
@@ -66,6 +72,7 @@
         <button class="speaker-close" type="button" aria-label="Fechar detalhes do palestrante" autofocus>×</button>
         <div class="speaker-profile">
           <img class="speaker-photo" id="speaker-photo" src="assets/palestrantes/danillo.png" alt="" width="486" height="500" />
+          <span class="speaker-placeholder speaker-photo" id="speaker-placeholder" aria-hidden="true" hidden></span>
           <div class="speaker-details">
             <p class="eyebrow eyebrow-dark"><span></span> Palestrante confirmado</p>
             <h2 id="speaker-name"></h2>
@@ -76,6 +83,7 @@
             <div class="speaker-talk">
               <h3>Palestra</h3>
               <p id="speaker-talk-title"></p>
+              <p class="speaker-talk-subtitle" id="speaker-talk-subtitle" hidden></p>
               <p class="speaker-time"><strong>Horário:</strong> a confirmar</p>
             </div>
           </div>
@@ -83,6 +91,6 @@
       </dialog>
 
     </main>
-    <script src="script.js?v=20260930-1"></script>
+    <script src="script.js?v=20260930-3"></script>
   </body>
 </html>

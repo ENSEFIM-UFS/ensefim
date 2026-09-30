@@ -35,6 +35,19 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  caroline: {
+    name: 'Caroline Fernandes',
+    role: 'Física Médica da Clinradi Imagem',
+    initials: 'CF',
+    lattes: 'https://lattes.cnpq.br/8983669336500082',
+    talk: 'Visita Técnica na Medicina Nuclear.',
+    subtitle: 'Física Médica responsável pela Visita Técnica à área de Medicina Nuclear da CLINRAD, conduzindo os participantes pelo serviço e apresentando, na prática, a rotina, os equipamentos e as principais aplicações da Física Médica no setor.',
+    bio: [
+      'Bacharel em Física Médica pela Universidade Federal de Sergipe.',
+      'Pós-graduada em Física de Radiodiagnóstico e Medicina Nuclear – Radioproteção e Controle da Qualidade.',
+      'Supervisora de Radioproteção em Medicina Nuclear certificada pela Comissão Nacional de Energia Nuclear (CNEN).'
+    ]
+  },
   danillo: {
     name: 'Me. Danillo Menezes',
     role: 'Físico médico · HUL-UFS/EBSERH',
@@ -83,10 +96,22 @@ if (speakerDialog) {
       document.querySelector('#speaker-name').textContent = speaker.name;
       document.querySelector('#speaker-role').textContent = speaker.role;
       const photo = document.querySelector('#speaker-photo');
-      photo.src = speaker.photo;
-      photo.alt = speaker.name;
+      const placeholder = document.querySelector('#speaker-placeholder');
+      photo.hidden = !speaker.photo;
+      placeholder.hidden = Boolean(speaker.photo);
+      placeholder.textContent = speaker.initials || '';
+      if (speaker.photo) {
+        photo.src = speaker.photo;
+        photo.alt = speaker.name;
+      } else {
+        photo.removeAttribute('src');
+        photo.alt = '';
+      }
       document.querySelector('#speaker-lattes').href = speaker.lattes;
       document.querySelector('#speaker-talk-title').textContent = speaker.talk;
+      const subtitle = document.querySelector('#speaker-talk-subtitle');
+      subtitle.textContent = speaker.subtitle || '';
+      subtitle.hidden = !speaker.subtitle;
       document.querySelector('#speaker-bio').replaceChildren(...speaker.bio.map((text) => {
         const paragraph = document.createElement('p');
         paragraph.textContent = text;
