@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260930-1" />
+    <link rel="stylesheet" href="styles.css?v=20260930-2" />
   </head>
   <body>
     <header class="site-header" id="inicio">
@@ -27,7 +27,7 @@
         <a href="#evento">O evento</a>
         <a href="#comissao">Comissão</a>
         <a href="#programacao">Programação</a>
-        <a href="#palestrantes">Palestrantes</a>
+        <a href="palestrantes.html">Palestrantes</a>
         <a href="trabalhos.html">Trabalhos científicos</a>
         <a class="nav-cta" href="inscricao.html">Inscrição <span>↗</span></a>
       </nav>
@@ -110,55 +110,6 @@
           </div>
         </div>
       </section>
-      <section class="speakers-section" id="palestrantes" aria-labelledby="speakers-title">
-        <div class="speakers-heading">
-          <p class="eyebrow eyebrow-dark"><span></span> Presenças confirmadas</p>
-          <h2 id="speakers-title">Palestrantes<span class="title-dot">.</span></h2>
-          <p>Conheça quem vai compartilhar conhecimento e experiências no ENSEFIM.</p>
-        </div>
-        <div class="speakers-grid">
-          <button class="speaker-card" type="button" data-speaker="danillo" aria-haspopup="dialog" aria-controls="speaker-dialog">
-            <img src="assets/palestrantes/danillo.png" alt="" width="486" height="500" loading="lazy" />
-            <strong>Me. Danillo Menezes</strong>
-            <span class="speaker-profession">Físico médico · HUL-UFS/EBSERH</span>
-            <span class="speaker-card-action">Conheça o palestrante <span aria-hidden="true">→</span></span>
-          </button>
-          <button class="speaker-card" type="button" data-speaker="fabinara" aria-haspopup="dialog" aria-controls="speaker-dialog">
-            <img src="assets/palestrantes/fabinara.png" alt="" width="486" height="500" loading="lazy" />
-            <strong>Ma. Fabinara Dantas</strong>
-            <span class="speaker-profession">Perita criminal · Polícia Científica de Sergipe</span>
-            <span class="speaker-card-action">Conheça a palestrante <span aria-hidden="true">→</span></span>
-          </button>
-          <button class="speaker-card" type="button" data-speaker="william" aria-haspopup="dialog" aria-controls="speaker-dialog">
-            <img src="assets/palestrantes/william.png" alt="" width="486" height="500" loading="lazy" />
-            <strong>Prof. Dr. William de Souza Santos</strong>
-            <span class="speaker-profession">Professor e pesquisador · UFS</span>
-            <span class="speaker-card-action">Conheça o palestrante <span aria-hidden="true">→</span></span>
-          </button>
-        </div>
-        <p class="speakers-note">Novos palestrantes serão anunciados em breve.</p>
-      </section>
-
-      <dialog class="speaker-dialog" id="speaker-dialog" aria-labelledby="speaker-name">
-        <button class="speaker-close" type="button" aria-label="Fechar detalhes do palestrante" autofocus>×</button>
-        <div class="speaker-profile">
-          <img class="speaker-photo" id="speaker-photo" src="assets/palestrantes/danillo.png" alt="" width="486" height="500" />
-          <div class="speaker-details">
-            <p class="eyebrow eyebrow-dark"><span></span> Palestrante confirmado</p>
-            <h2 id="speaker-name"></h2>
-            <p class="speaker-role" id="speaker-role"></p>
-            <h3>Mini CV</h3>
-            <div class="speaker-bio" id="speaker-bio"></div>
-            <a class="speaker-lattes" id="speaker-lattes" target="_blank" rel="noopener noreferrer">Ver currículo Lattes <span aria-hidden="true">↗</span><span class="speaker-sr-only"> (abre em nova aba)</span></a>
-            <div class="speaker-talk">
-              <h3>Palestra</h3>
-              <p id="speaker-talk-title"></p>
-              <p class="speaker-time"><strong>Horário:</strong> a confirmar</p>
-            </div>
-          </div>
-        </div>
-      </dialog>
-
       <section class="scientific-callout" aria-labelledby="scientific-callout-title">
         <div class="scientific-callout-watermark" aria-hidden="true">Trabalhos<br />científicos</div>
         <div class="scientific-callout-copy">
@@ -191,7 +142,7 @@
         <div class="coming-grid" id="programacao">
           <a href="#comissao" class="coming-card"><span>02</span><strong>Comissão<br />organizadora</strong><i>↗</i></a>
           <a href="#programacao" class="coming-card"><span>03</span><strong>Programação<br />completa</strong><i>↗</i></a>
-          <a href="#palestrantes" class="coming-card"><span>04</span><strong>Palestrantes<br />confirmados</strong><i>↗</i></a>
+          <a href="palestrantes.html" class="coming-card"><span>04</span><strong>Palestrantes<br />confirmados</strong><i>↗</i></a>
         </div>
       </section>
     </main>

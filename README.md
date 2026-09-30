@@ -14,11 +14,11 @@ npx serve .
 
 ## Próximas áreas
 
-A navegação possui âncoras para Comissão e Programação, cujos conteúdos podem ser preenchidos na próxima etapa. Palestrantes apresenta os convidados confirmados e abre seus detalhes na própria página. A opção Inscrição abre a página de cadastro, e Trabalhos científicos reúne o cronograma e as regras de submissão.
+A navegação possui âncoras para Comissão e Programação, cujos conteúdos podem ser preenchidos na próxima etapa. A página Palestrantes, acessível pelo menu, apresenta os convidados confirmados e abre seus detalhes na própria página. A opção Inscrição abre a página de cadastro, e Trabalhos científicos reúne o cronograma e as regras de submissão.
 
 ## Palestrantes
 
-Os cards ficam em `index.html`, as fotos em `assets/palestrantes/` e os currículos, títulos das palestras e links do Lattes no objeto `speakers` de `script.js`. Para adicionar um convidado, inclua seu card e um registro com a mesma chave em `data-speaker`. Os horários estão como “a confirmar” até a definição da programação. O modal utiliza um diálogo nativo, com fechamento por botão, Esc ou clique no fundo e retorno do foco ao card.
+Os cards ficam em `palestrantes.html`, as fotos em `assets/palestrantes/` e os currículos, títulos das palestras e links do Lattes no objeto `speakers` de `script.js`. Para adicionar um convidado, inclua seu card e um registro com a mesma chave em `data-speaker`. Os horários estão como “a confirmar” até a definição da programação. O modal utiliza um diálogo nativo, com fechamento por botão, Esc ou clique no fundo e retorno do foco ao card.
 
 ## Segurança
 
