@@ -87,7 +87,7 @@ const speakers = {
   },
   fabinara: {
     name: 'Ma. Fabinara Dantas',
-    role: 'Perita criminal · Polícia Científica de Sergipe',
+    role: 'Física Perita criminal · Polícia Científica de Sergipe',
     photo: 'assets/palestrantes/fabinara.png',
     lattes: 'https://lattes.cnpq.br/4770001264896347',
     talk: 'Da Física à Perícia Criminal: como a ciência ajuda a desvendar crimes',
