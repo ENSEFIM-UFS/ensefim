@@ -109,6 +109,33 @@ const speakers = {
       'Perita Criminal da Polícia Científica do Estado de Sergipe desde 2015. Atua no Laboratório de Balística Forense do Instituto de Criminalística. Instrutora da Academia de Polícia Civil de Sergipe e professora colaboradora da Pós-Graduação em Perícia Criminal e Ciências Forenses da Universidade Tiradentes, em Aracaju.'
     ]
   },
+  jonas: {
+    name: 'Jonas Prata',
+    role: 'Técnico e Tecnólogo em Radiologia · Supervisor das Aplicações das Técnicas Radiológicas',
+    photo: 'assets/palestrantes/jonas.png',
+    lattes: 'http://lattes.cnpq.br/5858569619575537',
+    talkType: 'Mesa redonda',
+    talk: 'Raios X no leito é realmente necessário?',
+    bio: [
+      'Técnico e Tecnólogo em Radiologia, especialista em Tomografia Computadorizada, Gestão em Saúde e Docência.',
+      'Atua como Supervisor das Aplicações das Técnicas Radiológicas no Hospital São Lucas - Rede D’Or, no Hospital Universitário de Sergipe - Universidade Federal de Sergipe (UFS) e no Centro de Acolhimento e Diagnóstico por Imagem (CADI/SES).',
+      'É membro da CONAE - Comissão Nacional de Educação do Conselho Nacional de Técnicos em Radiologia (CONTER), Imortal da Academia Brasileira de Ciências Radiológicas, ocupando a Cadeira nº 56, e Diretor do INSPIRA Cursos.'
+    ]
+  },
+  naiara: {
+    name: 'Naiara Sales',
+    role: 'Supervisora de Proteção Radiológica · Medicina Nuclear · Hospital Aristides Maltês · Hospital Mater Dei Salvador',
+    photo: 'assets/palestrantes/naiara.png',
+    lattes: 'http://lattes.cnpq.br/6299684461378331',
+    talk: 'Uma breve conversa sobre teranóstico',
+    bio: [
+      'Licenciada em Física pela Universidade Federal do Recôncavo da Bahia.',
+      'Supervisora de Proteção Radiológica em Medicina Nuclear (CNEN) e Especialista em Medicina Nuclear (ABFM).',
+      'Especialista em Gerenciamento de Rejeitos Radioativos (CDTN/MG).',
+      'Supervisora de Proteção Radiológica Substituta no Hospital Aristides Maltês e no Hospital Mater Dei Salvador.',
+      'Mestranda em Física na Universidade Federal de Sergipe (UFS).'
+    ]
+  },
   william: {
     name: 'Prof. Dr. William de Souza Santos',
     role: 'Físico Médico · Professor e pesquisador · UFS',
