@@ -68,6 +68,7 @@ const speakers = {
     role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
     photo: 'assets/palestrantes/izabela.png',
     lattes: 'http://lattes.cnpq.br/5643734964129586',
+    day: '05/11',
     time: '13:00',
     talkType: 'Mesa redonda',
     talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
@@ -82,6 +83,7 @@ const speakers = {
     role: 'Físico Médico · Radiodiagnóstico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
     photo: 'assets/palestrantes/cassio-20261012.png',
     lattes: 'http://lattes.cnpq.br/5607878675613649',
+    day: '05/11',
     time: '08:30',
     talkType: 'Mesa redonda',
     talk: 'Raios X no leito é realmente necessário?',
@@ -96,6 +98,7 @@ const speakers = {
     role: 'Física Médica · Radiodiagnóstico · HU-UFS/EBSERH',
     photo: 'assets/palestrantes/marcela-20261012.png',
     lattes: 'http://lattes.cnpq.br/4020200067609938',
+    day: '05/11',
     time: '13:00',
     talkType: 'Mesa redonda',
     talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
@@ -123,6 +126,8 @@ const speakers = {
     role: 'Físico Médico · Radiodiagnóstico · HUL-UFS/EBSERH',
     photo: 'assets/palestrantes/danillo.png',
     lattes: 'https://lattes.cnpq.br/7799351098704346',
+    day: '06/11',
+    time: '10:00',
     talk: 'Gestão da Proteção Radiológica em Serviços de Saúde',
     bio: [
       'Físico Médico da Unidade de Diagnóstico por Imagem do Hospital Universitário de Lagarto (HUL-UFS/EBSERH) e sócio do Instituto de Física Médica (IFM).',
@@ -134,7 +139,9 @@ const speakers = {
     role: 'Física Perita criminal · Polícia Científica de Sergipe',
     photo: 'assets/palestrantes/fabinara.png',
     lattes: 'https://lattes.cnpq.br/4770001264896347',
-    talk: 'Da Física à Perícia Criminal: como a ciência ajuda a desvendar crimes',
+    day: '06/11',
+    time: '09:00',
+    talk: 'Da Física à Perícia Criminal: Como a Ciência ajuda a desvendar crimes',
     bio: [
       'Possui graduação em Física – Licenciatura pelo Instituto Federal de Educação, Ciência e Tecnologia do Sertão Pernambucano (2012) e mestrado em Física pela Universidade Federal de Sergipe (2015).',
       'Perita Criminal da Polícia Científica do Estado de Sergipe desde 2015. Atua no Laboratório de Balística Forense do Instituto de Criminalística. Instrutora da Academia de Polícia Civil de Sergipe e professora colaboradora da Pós-Graduação em Perícia Criminal e Ciências Forenses da Universidade Tiradentes, em Aracaju.'
@@ -145,6 +152,7 @@ const speakers = {
     role: 'Técnico e Tecnólogo em Radiologia · Supervisor das Aplicações das Técnicas Radiológicas',
     photo: 'assets/palestrantes/jonas.png',
     lattes: 'http://lattes.cnpq.br/5858569619575537',
+    day: '05/11',
     time: '08:30',
     talkType: 'Mesa redonda',
     talk: 'Raios X no leito é realmente necessário?',
@@ -159,6 +167,7 @@ const speakers = {
     role: 'Supervisora de Radioproteção · Medicina Nuclear',
     photo: 'assets/palestrantes/alinne.png',
     lattes: 'http://lattes.cnpq.br/9773275808755205',
+    day: '05/11',
     time: '13:00',
     talkType: 'Mesa redonda',
     talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
@@ -174,6 +183,8 @@ const speakers = {
     role: 'Supervisora de Proteção Radiológica · Medicina Nuclear · Hospital Aristides Maltês · Hospital Mater Dei Salvador',
     photo: 'assets/palestrantes/naiara.png',
     lattes: 'http://lattes.cnpq.br/6299684461378331',
+    day: '06/11',
+    time: '08:00',
     talk: 'Uma breve conversa sobre teranóstico',
     bio: [
       'Licenciada em Física pela Universidade Federal do Recôncavo da Bahia.',
@@ -188,6 +199,7 @@ const speakers = {
     role: 'Físico Médico · Professor e pesquisador · UFS',
     photo: 'assets/palestrantes/william.png',
     lattes: 'https://lattes.cnpq.br/5150139546603006',
+    day: '05/11',
     time: '14:20',
     talk: 'Monte Carlo na Física Médica: Dosimetria, Imagem e Proteção Radiológica',
     bio: [
@@ -247,6 +259,7 @@ if (speakerDialog) {
     }
     document.querySelector('#speaker-talk-type').textContent = speaker.talkType || 'Palestra';
     document.querySelector('#speaker-talk-title').textContent = speaker.talk;
+    document.querySelector('#speaker-day').textContent = speaker.day || 'A confirmar';
     document.querySelector('#speaker-time').textContent = speaker.time || 'A confirmar';
     const subtitle = document.querySelector('#speaker-talk-subtitle');
     subtitle.textContent = speaker.subtitle || '';
