@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261012-4" />
+    <link rel="stylesheet" href="styles.css?v=20261012-6" />
   </head>
   <body class="program-page">
     <header class="site-header">
@@ -67,7 +67,7 @@
                 <div class="program-people">
                   <div class="program-person"><img src="assets/palestrantes/cassio-20261012.png" alt="" width="64" height="64" /><span><button class="program-person-link" type="button" data-speaker="cassio" aria-haspopup="dialog" aria-controls="speaker-dialog"><strong>Dr. Cássio Costa Ferreira</strong></button></span></div>
                   <div class="program-person"><img src="assets/palestrantes/divanizia.png" alt="" width="64" height="64" /><span><strong>Profa. Dra. Divanizia do Nascimento Souza</strong></span></div>
-                  <div class="program-person"><img src="assets/palestrantes/laelia.png" alt="" width="64" height="64" /><span><strong>Profa. Dra. Laélia Pumilla Botelho</strong></span></div>
+                  <div class="program-person"><img src="assets/palestrantes/laelia.png" alt="" width="64" height="64" /><span><strong>Profa. Dra. Laélia Campos</strong></span></div>
                 </div>
               </article>
             </li>
@@ -155,7 +155,7 @@
         </section>
       </section>
 
-      <dialog class="speaker-dialog" id="speaker-dialog" aria-labelledby="speaker-name">
+      <dialog class="speaker-dialog speaker-dialog-program-compact" id="speaker-dialog" aria-labelledby="speaker-name">
         <button class="speaker-close" type="button" aria-label="Fechar detalhes do palestrante" autofocus>×</button>
         <div class="speaker-profile">
           <img class="speaker-photo" id="speaker-photo" src="assets/palestrantes/cassio-20261012.png" alt="" width="486" height="500" />
@@ -171,13 +171,13 @@
               <h3 id="speaker-talk-type">Palestra</h3>
               <p id="speaker-talk-title"></p>
               <p class="speaker-talk-subtitle" id="speaker-talk-subtitle" hidden></p>
-              <p class="speaker-time"><strong>Horário:</strong> a confirmar</p>
+              <p class="speaker-time"><strong>Horário:</strong> <span id="speaker-time">A confirmar</span></p>
             </div>
           </div>
         </div>
       </dialog>
     </main>
 
-    <script src="script.js?v=20261012-7"></script>
+    <script src="script.js?v=20261012-8"></script>
   </body>
 </html>
