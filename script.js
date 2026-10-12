@@ -71,7 +71,8 @@ const speakers = {
     bio: [
       'Bacharel em Física Médica pela Universidade Federal de Uberlândia (UFU). Mestre em Ciências pela mesma instituição, com bolsa CAPES e atuação na área de radiografia odontológica intraoral e extraoral.',
       'Atualmente, é residente do 2º ano em Física Médica do Radiodiagnóstico no HU-UFS, com experiência nas áreas de controle de qualidade em equipamentos de imagem, cálculo de blindagem e proteção radiológica. Atua na linha de pesquisa em Sistemas Computacionais e Dispositivos Aplicados à Saúde.',
-      'Desenvolve pesquisas na área de Física Médica, com ênfase em dosimetria e simulação computacional aplicada à mamografia digital e à tomossíntese mamária, especialmente na estimativa e avaliação da dose glandular média e na otimização de protocolos de aquisição de imagens.'
+      'Desenvolve pesquisas na área de Física Médica, com ênfase em dosimetria e simulação computacional aplicada à mamografia digital e à tomossíntese mamária, especialmente na estimativa e avaliação da dose glandular média e na otimização de protocolos de aquisição de imagens.',
+      'Idealizadora do Encontro Sergipano de Física Médica da Universidade Federal de Sergipe.'
     ]
   },
   laelia: {
