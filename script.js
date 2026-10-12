@@ -147,7 +147,10 @@ const speakers = {
     role: 'Física Médica · Medicina Nuclear · Clinradi',
     photo: 'assets/palestrantes/caroline.png',
     lattes: 'https://lattes.cnpq.br/8983669336500082',
-    talk: 'Visita Técnica na Medicina Nuclear.',
+    day: '07/11',
+    time: '07:00',
+    talkType: 'Visita guiada',
+    talk: 'Visita Técnica na Medicina Nuclear - CLINRAD',
     subtitle: 'Física Médica responsável pela Visita Técnica à área de Medicina Nuclear da CLINRAD, conduzindo os participantes pelo serviço e apresentando, na prática, a rotina, os equipamentos e as principais aplicações da Física Médica no setor.',
     bio: [
       'Bacharel em Física Médica pela Universidade Federal de Sergipe.',
