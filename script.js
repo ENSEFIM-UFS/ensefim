@@ -184,46 +184,46 @@ const speakerDialog = document.querySelector('#speaker-dialog');
 
 if (speakerDialog) {
   let speakerTrigger;
-  document.querySelectorAll('[data-speaker]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const speaker = speakers[button.dataset.speaker];
-      if (!speaker) return;
-      speakerTrigger = button;
-      document.querySelector('#speaker-name').textContent = speaker.name;
-      document.querySelector('#speaker-role').textContent = speaker.role;
-      const photo = document.querySelector('#speaker-photo');
-      const placeholder = document.querySelector('#speaker-placeholder');
-      photo.hidden = !speaker.photo;
-      placeholder.hidden = Boolean(speaker.photo);
-      placeholder.textContent = speaker.initials || '';
-      if (speaker.photo) {
-        photo.src = speaker.photo;
-        photo.alt = speaker.name;
-      } else {
-        photo.removeAttribute('src');
-        photo.alt = '';
-      }
-      const lattes = document.querySelector('#speaker-lattes');
-      lattes.hidden = !speaker.lattes;
-      if (speaker.lattes) {
-        lattes.href = speaker.lattes;
-      } else {
-        lattes.removeAttribute('href');
-      }
-      document.querySelector('#speaker-talk-type').textContent = speaker.talkType || 'Palestra';
-      document.querySelector('#speaker-talk-title').textContent = speaker.talk;
-      const subtitle = document.querySelector('#speaker-talk-subtitle');
-      subtitle.textContent = speaker.subtitle || '';
-      subtitle.hidden = !speaker.subtitle;
-      document.querySelector('#speaker-bio').replaceChildren(...speaker.bio.map((text) => {
-        const paragraph = document.createElement('p');
-        paragraph.textContent = text;
-        return paragraph;
-      }));
-      speakerDialog.showModal();
-      speakerDialog.scrollTop = 0;
-      document.body.classList.add('speaker-dialog-open');
-    });
+  speakerGrid?.addEventListener('click', (event) => {
+    const button = event.target instanceof Element ? event.target.closest('[data-speaker]') : null;
+    if (!button || !speakerGrid.contains(button)) return;
+    const speaker = speakers[button.dataset.speaker];
+    if (!speaker) return;
+    speakerTrigger = button;
+    document.querySelector('#speaker-name').textContent = speaker.name;
+    document.querySelector('#speaker-role').textContent = speaker.role;
+    const photo = document.querySelector('#speaker-photo');
+    const placeholder = document.querySelector('#speaker-placeholder');
+    photo.hidden = !speaker.photo;
+    placeholder.hidden = Boolean(speaker.photo);
+    placeholder.textContent = speaker.initials || '';
+    if (speaker.photo) {
+      photo.src = speaker.photo;
+      photo.alt = speaker.name;
+    } else {
+      photo.removeAttribute('src');
+      photo.alt = '';
+    }
+    const lattes = document.querySelector('#speaker-lattes');
+    lattes.hidden = !speaker.lattes;
+    if (speaker.lattes) {
+      lattes.href = speaker.lattes;
+    } else {
+      lattes.removeAttribute('href');
+    }
+    document.querySelector('#speaker-talk-type').textContent = speaker.talkType || 'Palestra';
+    document.querySelector('#speaker-talk-title').textContent = speaker.talk;
+    const subtitle = document.querySelector('#speaker-talk-subtitle');
+    subtitle.textContent = speaker.subtitle || '';
+    subtitle.hidden = !speaker.subtitle;
+    document.querySelector('#speaker-bio').replaceChildren(...speaker.bio.map((text) => {
+      const paragraph = document.createElement('p');
+      paragraph.textContent = text;
+      return paragraph;
+    }));
+    speakerDialog.showModal();
+    speakerDialog.scrollTop = 0;
+    document.body.classList.add('speaker-dialog-open');
   });
 
   speakerDialog.querySelector('.speaker-close').addEventListener('click', () => speakerDialog.close());
