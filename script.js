@@ -97,6 +97,32 @@ const speakers = {
       'Atua como voluntária na Women in Nuclear (WiN) Brasil, organização não governamental vinculada à WiN Global, dedicada à promoção da representatividade feminina nas áreas de ciência e tecnologia nuclear.'
     ]
   },
+  vital: {
+    name: 'Vital Opportun Mevi',
+    role: 'Física Médica · Residente em Radiodiagnóstico',
+    photo: 'assets/palestrantes/vital.png',
+    lattes: 'http://lattes.cnpq.br/8835830584425531',
+    day: '07/11',
+    time: '13:00',
+    talkType: 'Visita guiada',
+    talk: 'Visita Técnica no Radiodiagnóstico - HU-UFS',
+    bio: [
+      'Bacharel em Física Médica pela Universidade Federal de Uberlândia.',
+      'Residente em Radiodiagnóstico no Hospital Universitário da Universidade Federal de Sergipe (HU-UFS).',
+      'Possui experiência nas áreas de controle de qualidade em equipamentos de imagem e proteção radiológica.'
+    ]
+  },
+  marcelo: {
+    name: 'Marcelo Luis',
+    role: 'Físico Médico · Residente do 1º ano em Radiodiagnóstico',
+    initials: 'ML',
+    lattes: 'http://lattes.cnpq.br/9474735961921401',
+    bio: [
+      'Bacharel em Física Médica pela Universidade Federal de Sergipe.',
+      'Residente do primeiro ano em Radiodiagnóstico no Hospital Universitário da Universidade Federal de Sergipe.',
+      'Possui experiência nas áreas de controle de qualidade em equipamentos de imagem e proteção radiológica.'
+    ]
+  },
   izabela: {
     name: 'Dra. Izabela Teles',
     role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
