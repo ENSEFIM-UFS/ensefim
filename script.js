@@ -122,6 +122,18 @@ const speakers = {
       'É membro da CONAE - Comissão Nacional de Educação do Conselho Nacional de Técnicos em Radiologia (CONTER), Imortal da Academia Brasileira de Ciências Radiológicas, ocupando a Cadeira nº 56, e Diretor do INSPIRA Cursos.'
     ]
   },
+  alinne: {
+    name: 'Esp. Alinne Barreto',
+    role: 'Supervisora de Radioproteção · Medicina Nuclear',
+    photo: 'assets/palestrantes/alinne.png',
+    lattes: 'http://lattes.cnpq.br/9773275808755205',
+    bio: [
+      'Física Médica, graduada pela Universidade Federal de Sergipe (UFS), especialista em Medicina Nuclear pelo HCFMUSP e Supervisora de Proteção Radiológica em Medicina Nuclear.',
+      'Possui mais de 12 anos de experiência na área, com atuação em instituições de referência como HC/USP, ICESP, InCor, Hospital Israelita Albert Einstein e Grupo Fleury.',
+      'Ao longo de sua trajetória, acumulou experiência em diagnóstico por imagem, controle de qualidade, radioproteção, PET/CT, SPECT e capacitação de equipes.',
+      'Atualmente, atua na interface entre saúde, tecnologia e inovação, como Executiva Comercial e de Relacionamento com o Cliente, trabalhando com soluções digitais e Inteligência Artificial aplicadas à Medicina Diagnóstica.'
+    ]
+  },
   naiara: {
     name: 'Naiara Sales',
     role: 'Supervisora de Proteção Radiológica · Medicina Nuclear · Hospital Aristides Maltês · Hospital Mater Dei Salvador',
