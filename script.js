@@ -63,6 +63,39 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  ariadny: {
+    name: 'Ma. Ariadny Thayla Machado',
+    role: 'Física Médica · Residente em Radiodiagnóstico',
+    photo: 'assets/palestrantes/ariadny.png',
+    lattes: 'http://lattes.cnpq.br/7313131968536741',
+    bio: [
+      'Bacharel em Física Médica pela Universidade Federal de Uberlândia (UFU). Mestre em Ciências pela mesma instituição, com bolsa CAPES e atuação na área de radiografia odontológica intraoral e extraoral.',
+      'Atualmente, é residente do 2º ano em Física Médica do Radiodiagnóstico no HU-UFS, com experiência nas áreas de controle de qualidade em equipamentos de imagem, cálculo de blindagem e proteção radiológica. Atua na linha de pesquisa em Sistemas Computacionais e Dispositivos Aplicados à Saúde.',
+      'Desenvolve pesquisas na área de Física Médica, com ênfase em dosimetria e simulação computacional aplicada à mamografia digital e à tomossíntese mamária, especialmente na estimativa e avaliação da dose glandular média e na otimização de protocolos de aquisição de imagens.'
+    ]
+  },
+  laelia: {
+    name: 'Profa. Dra. Laélia Campos',
+    role: 'Física Médica · Coordenadora do Curso de Graduação de Física Médica · UFS',
+    photo: 'assets/palestrantes/laelia.png',
+    lattes: 'http://lattes.cnpq.br/2554422948649781',
+    bio: [
+      'Doutorado em co-tutela na área de Tecnologias Energéticas Nucleares pela Universidade Federal de Pernambuco e em Toxicologia no Departamento de Biofísica da Universidade Paris VII.',
+      'Atualmente é professora da Universidade Federal de Sergipe e atua nas áreas de Física Médica, ensino de Física, dosimetria numérica e estatística aplicada.',
+      'É membro do Programa de Pós-Graduação Profissional em Ensino de Física (MNPEF), Polo 11, e da Residência Multiprofissional em Física Médica – Radiodiagnóstico. Coordena o curso de graduação de Física Médica da Universidade Federal de Sergipe.'
+    ]
+  },
+  alanna: {
+    name: 'Alanna Santos',
+    role: 'Física Médica · Residente em Radiodiagnóstico',
+    photo: 'assets/palestrantes/alanna.png',
+    lattes: 'http://lattes.cnpq.br/5515241480597136',
+    bio: [
+      'Bacharela em Física Médica pela Universidade Federal de Sergipe (UFS) e residente em Radiodiagnóstico no Hospital Universitário da Universidade Federal de Sergipe (HU-UFS).',
+      'Possui experiência nas áreas de controle de qualidade em equipamentos de imagem, cálculo de blindagem e proteção radiológica.',
+      'Atua como voluntária na Women in Nuclear (WiN) Brasil, organização não governamental vinculada à WiN Global, dedicada à promoção da representatividade feminina nas áreas de ciência e tecnologia nuclear.'
+    ]
+  },
   izabela: {
     name: 'Dra. Izabela Teles',
     role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
