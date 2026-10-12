@@ -79,7 +79,7 @@ const speakers = {
   cassio: {
     name: 'Dr. Cássio Costa',
     role: 'Físico Médico · Radiodiagnóstico · HU-UFS/EBSERH\nCoordenador da Residência · HU-UFS',
-    photo: 'assets/palestrantes/cassio.png?v=20261012-7',
+    photo: 'assets/palestrantes/cassio-20261012.png',
     lattes: 'http://lattes.cnpq.br/5607878675613649',
     talkType: 'Mesa redonda',
     talk: 'Raios X no leito é realmente necessário?',
@@ -92,7 +92,7 @@ const speakers = {
   marcela: {
     name: 'Ma. Marcela Costa',
     role: 'Física Médica · Radiodiagnóstico · HU-UFS/EBSERH',
-    photo: 'assets/palestrantes/marcela.png?v=20261012-7',
+    photo: 'assets/palestrantes/marcela-20261012.png',
     lattes: 'http://lattes.cnpq.br/4020200067609938',
     talkType: 'Mesa redonda',
     talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
