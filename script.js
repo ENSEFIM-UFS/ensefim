@@ -123,10 +123,12 @@ const speakers = {
     ]
   },
   alinne: {
-    name: 'Esp. Alinne Barreto',
+    name: 'Alinne Barreto',
     role: 'Supervisora de Radioproteção · Medicina Nuclear',
     photo: 'assets/palestrantes/alinne.png',
     lattes: 'http://lattes.cnpq.br/9773275808755205',
+    talkType: 'Mesa redonda',
+    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
     bio: [
       'Física Médica, graduada pela Universidade Federal de Sergipe (UFS), especialista em Medicina Nuclear pelo HCFMUSP e Supervisora de Proteção Radiológica em Medicina Nuclear.',
       'Possui mais de 12 anos de experiência na área, com atuação em instituições de referência como HC/USP, ICESP, InCor, Hospital Israelita Albert Einstein e Grupo Fleury.',
