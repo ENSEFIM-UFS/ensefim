@@ -212,10 +212,9 @@ const speakerDialog = document.querySelector('#speaker-dialog');
 
 if (speakerDialog) {
   let speakerTrigger;
-  speakerGrid?.addEventListener('click', (event) => {
+  document.addEventListener('click', (event) => {
     const button = event.target instanceof Element ? event.target.closest('[data-speaker]') : null;
-    if (!button || !speakerGrid.contains(button)) return;
-    if (!(button instanceof HTMLButtonElement)) return;
+    if (!button || button instanceof HTMLAnchorElement) return;
     const speaker = speakers[button.dataset.speaker];
     if (!speaker) return;
     speakerTrigger = button;
