@@ -13,6 +13,34 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
   });
 });
 
+const programTabs = [...document.querySelectorAll('[data-program-day]')];
+const selectProgramDay = (tab, focus = false) => {
+  const day = tab.dataset.programDay;
+  programTabs.forEach((item) => {
+    const selected = item === tab;
+    item.setAttribute('aria-selected', String(selected));
+    item.tabIndex = selected ? 0 : -1;
+  });
+  document.querySelectorAll('[data-program-panel]').forEach((panel) => {
+    panel.hidden = panel.dataset.programPanel !== day;
+  });
+  if (focus) tab.focus();
+};
+
+programTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => selectProgramDay(tab));
+  tab.addEventListener('keydown', (event) => {
+    let nextIndex = index;
+    if (event.key === 'ArrowRight') nextIndex = (index + 1) % programTabs.length;
+    else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + programTabs.length) % programTabs.length;
+    else if (event.key === 'Home') nextIndex = 0;
+    else if (event.key === 'End') nextIndex = programTabs.length - 1;
+    else return;
+    event.preventDefault();
+    selectProgramDay(programTabs[nextIndex], true);
+  });
+});
+
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
 const scrollSpyLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
@@ -187,6 +215,7 @@ if (speakerDialog) {
   speakerGrid?.addEventListener('click', (event) => {
     const button = event.target instanceof Element ? event.target.closest('[data-speaker]') : null;
     if (!button || !speakerGrid.contains(button)) return;
+    if (!(button instanceof HTMLButtonElement)) return;
     const speaker = speakers[button.dataset.speaker];
     if (!speaker) return;
     speakerTrigger = button;
@@ -221,20 +250,42 @@ if (speakerDialog) {
       paragraph.textContent = text;
       return paragraph;
     }));
-    speakerDialog.showModal();
+    if (typeof speakerDialog.showModal === 'function') {
+      speakerDialog.showModal();
+    } else {
+      speakerDialog.classList.add('speaker-dialog-fallback');
+      speakerDialog.setAttribute('open', '');
+      document.body.classList.add('speaker-dialog-fallback-open');
+    }
     speakerDialog.scrollTop = 0;
     document.body.classList.add('speaker-dialog-open');
   });
 
-  speakerDialog.querySelector('.speaker-close').addEventListener('click', () => speakerDialog.close());
+  const closeSpeakerDialog = () => {
+    if (typeof speakerDialog.close === 'function') {
+      speakerDialog.close();
+      return;
+    }
+    speakerDialog.removeAttribute('open');
+    speakerDialog.classList.remove('speaker-dialog-fallback');
+    document.body.classList.remove('speaker-dialog-open', 'speaker-dialog-fallback-open');
+    speakerTrigger?.focus({ preventScroll: true });
+  };
+
+  speakerDialog.querySelector('.speaker-close').addEventListener('click', closeSpeakerDialog);
   speakerDialog.addEventListener('click', (event) => {
     const bounds = speakerDialog.getBoundingClientRect();
     if (event.target === speakerDialog &&
         (event.clientX < bounds.left || event.clientX > bounds.right ||
-         event.clientY < bounds.top || event.clientY > bounds.bottom)) speakerDialog.close();
+         event.clientY < bounds.top || event.clientY > bounds.bottom)) closeSpeakerDialog();
   });
   speakerDialog.addEventListener('close', () => {
-    document.body.classList.remove('speaker-dialog-open');
+    speakerDialog.classList.remove('speaker-dialog-fallback');
+    document.body.classList.remove('speaker-dialog-open', 'speaker-dialog-fallback-open');
     speakerTrigger?.focus({ preventScroll: true });
   });
+}
+const linkedSpeakerMatch = window.location.hash.match(/^#speaker-([a-z]+)$/);
+if (linkedSpeakerMatch) {
+  document.querySelector(`[data-speaker="${linkedSpeakerMatch[1]}"]`)?.click();
 }

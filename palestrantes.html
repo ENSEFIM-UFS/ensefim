@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260930-6" />
+    <link rel="stylesheet" href="styles.css?v=20261012-3" />
   </head>
   <body class="speakers-page">
     <header class="site-header">
@@ -25,7 +25,7 @@
         <a href="index.html#inicio">Início</a>
         <a href="index.html#evento">O evento</a>
         <a href="index.html#comissao">Comissão</a>
-        <a href="index.html#programacao">Programação</a>
+        <a href="programacao.html">Programação</a>
         <a class="active" href="palestrantes.html" aria-current="page">Palestrantes</a>
         <a href="trabalhos.html">Trabalhos científicos</a>
         <a class="nav-cta" href="inscricao.html">Inscrição <span>↗</span></a>
@@ -88,12 +88,12 @@
             <span class="speaker-profession">Supervisor das Aplicações das Técnicas Radiológicas · Hospital São Lucas · HU-UFS · CADI/SES</span>
             <span class="speaker-card-action">Conheça o palestrante <span aria-hidden="true">→</span></span>
           </button>
-          <button class="speaker-card" type="button" data-speaker="alinne" aria-haspopup="dialog" aria-controls="speaker-dialog">
+          <a class="speaker-card" data-speaker="alinne" href="#alinne-details" aria-haspopup="dialog" aria-controls="alinne-details">
             <img src="assets/palestrantes/alinne.png" alt="" width="486" height="500" loading="lazy" />
             <strong>Alinne Barreto</strong>
             <span class="speaker-profession">Supervisora de Radioproteção · Medicina Nuclear</span>
             <span class="speaker-card-action">Conheça a palestrante <span aria-hidden="true">→</span></span>
-          </button>
+          </a>
           <button class="speaker-card" type="button" data-speaker="naiara" aria-haspopup="dialog" aria-controls="speaker-dialog">
             <img src="assets/palestrantes/naiara.png" alt="" width="486" height="500" loading="lazy" />
             <strong>Naiara Sales</strong>
@@ -126,7 +126,33 @@
         </div>
       </dialog>
 
+      <section class="alinne-detail-overlay" id="alinne-details" role="dialog" aria-modal="true" aria-labelledby="alinne-name">
+        <div class="alinne-detail-surface">
+          <a class="speaker-close" href="#palestrantes" aria-label="Fechar detalhes de Alinne Barreto">×</a>
+          <div class="speaker-profile">
+            <img class="speaker-photo" src="assets/palestrantes/alinne.png" alt="Alinne Barreto" width="486" height="500" />
+            <div class="speaker-details">
+              <p class="eyebrow eyebrow-dark"><span></span> Palestrante confirmada</p>
+              <h2 id="alinne-name">Alinne Barreto</h2>
+              <p class="speaker-role">Supervisora de Radioproteção · Medicina Nuclear</p>
+              <h3>Sobre a palestrante</h3>
+              <div class="speaker-bio">
+                <p>Física Médica, graduada pela Universidade Federal de Sergipe (UFS), especialista em Medicina Nuclear pelo HCFMUSP e Supervisora de Proteção Radiológica em Medicina Nuclear.</p>
+                <p>Possui mais de 12 anos de experiência na área, com atuação em instituições de referência como HC/USP, ICESP, InCor, Hospital Israelita Albert Einstein e Grupo Fleury.</p>
+                <p>Ao longo de sua trajetória, acumulou experiência em diagnóstico por imagem, controle de qualidade, radioproteção, PET/CT, SPECT e capacitação de equipes.</p>
+                <p>Atualmente, atua na interface entre saúde, tecnologia e inovação, como Executiva Comercial e de Relacionamento com o Cliente, trabalhando com soluções digitais e Inteligência Artificial aplicadas à Medicina Diagnóstica.</p>
+              </div>
+              <a class="speaker-lattes" href="http://lattes.cnpq.br/9773275808755205" target="_blank" rel="noopener noreferrer">Ver currículo Lattes <span aria-hidden="true">↗</span></a>
+              <div class="speaker-talk">
+                <h3>Mesa redonda</h3>
+                <p>Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
-    <script src="script.js?v=20261012-2"></script>
+    <script src="script.js?v=20261012-5"></script>
   </body>
 </html>
