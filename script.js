@@ -115,12 +115,36 @@ const speakers = {
   marcelo: {
     name: 'Marcelo Luis',
     role: 'Físico Médico · Residente do 1º ano em Radiodiagnóstico',
-    initials: 'ML',
+    photo: 'assets/palestrantes/marcelo.png',
     lattes: 'http://lattes.cnpq.br/9474735961921401',
     bio: [
       'Bacharel em Física Médica pela Universidade Federal de Sergipe.',
       'Residente do primeiro ano em Radiodiagnóstico no Hospital Universitário da Universidade Federal de Sergipe.',
       'Possui experiência nas áreas de controle de qualidade em equipamentos de imagem e proteção radiológica.'
+    ]
+  },
+  joatan: {
+    name: 'José Joatan Rodrigues Júnior',
+    role: 'Professor Titular do Departamento de Física · UFS · Coordenador do departamento',
+    photo: 'assets/palestrantes/joatan.png',
+    lattes: 'http://lattes.cnpq.br/6756892429369226',
+    bio: [
+      'Possui graduação em Física pela Universidade Federal do Ceará, mestrado e doutorado em Física pela Universidade de São Paulo (USP). Realizou estágios de pós-doutorado no Departamento de Física da Universidade Federal de Pernambuco (UFPE), entre 2003 e 2004, e na Università di Pisa, Itália, entre 2018 e 2019.',
+      'Foi professor da Universidade Federal do Vale do São Francisco (UNIVASF) no período de 2004 a 2009. Atualmente, é Professor Titular do Departamento de Física da Universidade Federal de Sergipe (UFS), atuando no ensino de graduação e no Programa de Pós-Graduação em Física. Integra o Instituto Nacional de Ciência e Tecnologia em Fotônica (INCT de Fotônica).',
+      'Possui experiência na área de Física, com ênfase no estudo das propriedades ópticas de materiais e nas aplicações da óptica e da fotônica às ciências da saúde.'
+    ]
+  },
+  luiz: {
+    name: 'Luiz Eduardo',
+    role: 'Físico Médico · Radioterapia · Complexo Hospitalar Manoel André',
+    photo: 'assets/palestrantes/luiz.png',
+    lattes: 'http://lattes.cnpq.br/8166933125449113',
+    day: '06/11',
+    time: '14:00',
+    talk: 'Atuação do Físico Médico em radioterapia',
+    bio: [
+      'Licenciado em Física pela Universidade Federal de Sergipe (UFS), com especialização em Física Médica pelo Instituto Nacional de Câncer (INCA) e título de especialista em Física Médica, com habilitação em Radioterapia, pela Associação Brasileira de Física Médica (ABFM).',
+      'Atua como Coordenador de Física Médica e Supervisor de Proteção Radiológica em Radioterapia no Complexo Hospitalar Manoel André. Possui ampla experiência em Física Médica, com ênfase em radioterapia, proteção radiológica, dosimetria e controle de qualidade, além de participação em pesquisas e publicações científicas na área.'
     ]
   },
   izabela: {
