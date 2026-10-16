@@ -136,7 +136,7 @@ const speakers = {
   },
   luiz: {
     name: 'Luiz Eduardo',
-    role: 'Físico Médico · Radioterapia · Complexo Hospitalar Manoel André',
+    role: 'Físico Médico · Radioterapia · REDE ONCO',
     photo: 'assets/palestrantes/luiz.png',
     lattes: 'http://lattes.cnpq.br/8166933125449113',
     day: '06/11',
