@@ -14,7 +14,7 @@ npx serve .
 
 ## Próximas áreas
 
-A navegação possui âncoras para Comissão e Programação, cujos conteúdos podem ser preenchidos na próxima etapa. A página Palestrantes, acessível pelo menu, apresenta os convidados confirmados e abre seus detalhes na própria página. A opção Inscrição abre a página de cadastro, e Trabalhos científicos reúne o cronograma e as regras de submissão.
+A navegação inclui a seção Patrocinadores, reservada para inclusão futura, e a página Programação. A página Palestrantes, acessível pelo menu, apresenta os convidados confirmados e abre seus detalhes na própria página. A opção Inscrição abre a página de cadastro, e Trabalhos científicos reúne o cronograma e as regras de submissão.
 
 ## Palestrantes
 

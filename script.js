@@ -234,6 +234,20 @@ const speakers = {
       'Perita Criminal da Polícia Científica do Estado de Sergipe desde 2015. Atua no Laboratório de Balística Forense do Instituto de Criminalística. Instrutora da Academia de Polícia Civil de Sergipe e professora colaboradora da Pós-Graduação em Perícia Criminal e Ciências Forenses da Universidade Tiradentes, em Aracaju.'
     ]
   },
+  yklys: {
+    name: 'Me. Yklys',
+    role: 'Físico Médico COVISA/SES',
+    photo: 'assets/palestrantes/yklys.png',
+    lattes: 'http://lattes.cnpq.br/9601959592189180',
+    day: '05/11',
+    time: '08:30',
+    talkType: 'Mesa redonda',
+    talk: 'Raios X no leito é realmente necessário?',
+    bio: [
+      'Graduado em Física Médica pela Universidade Federal de Sergipe (UFS). Mestre em Tecnologia Nuclear pelo Instituto de Pesquisas Energéticas e Nucleares (IPEN/USP).',
+      'Atualmente atua como Físico Médico na Coordenação de Vigilância Sanitária da Secretaria de Estado da Saúde (COVISA/SES), com experiência em inspeções sanitárias em serviços de diagnóstico por imagem, e é ponto focal do Projeto Nacional de Harmonização das Ações de Inspeção Sanitária em Serviços de Saúde e de Interesse para a Saúde da Agência Nacional de Vigilância Sanitária (ANVISA).'
+    ]
+  },
   jonas: {
     name: 'Jonas Prata',
     role: 'Técnico e Tecnólogo em Radiologia · Supervisor das Aplicações das Técnicas Radiológicas',
