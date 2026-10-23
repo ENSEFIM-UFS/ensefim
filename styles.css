@@ -1251,7 +1251,7 @@ button { font: inherit; }
 .works-text ul { margin: 8px 0 26px; padding-left: 25px; }
 .works-text li { margin-bottom: 9px; padding-left: 5px; }
 .works-text li::marker { color: var(--orange); }
-.works-result-update { color: #b07800; font-weight: 700; }
+.works-result-update { color: var(--navy); background: #ffe066; padding: 2px 6px; border-radius: 4px; font-weight: 700; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .works-text strong { color: var(--navy); font-weight: 700; }
 .works-form-message { border-left: 4px solid var(--orange); margin-top: 30px !important; padding: 10px 0 10px 20px; }
 .works-template { margin: 24px 0 30px !important; }
