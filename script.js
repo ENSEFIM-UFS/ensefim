@@ -124,7 +124,7 @@ const speakers = {
     ]
   },
   joatan: {
-    name: 'José Joatan Rodrigues Júnior',
+    name: 'Prof. Dr. José Joatan Rodrigues Júnior',
     role: 'Professor Titular do Departamento de Física · UFS · Coordenador do departamento',
     photo: 'assets/palestrantes/joatan.png',
     lattes: 'http://lattes.cnpq.br/6756892429369226',
@@ -236,7 +236,7 @@ const speakers = {
   },
   yklys: {
     name: 'Me. Yklys',
-    role: 'Físico Médico COVISA/SES',
+    role: 'Físico Médico · COVISA/SES',
     photo: 'assets/palestrantes/yklys.png',
     lattes: 'http://lattes.cnpq.br/9601959592189180',
     day: '05/11',
