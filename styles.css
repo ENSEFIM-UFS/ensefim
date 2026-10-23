@@ -1254,6 +1254,14 @@ button { font: inherit; }
 .works-result-update { color: var(--navy); background: #ffe066; padding: 2px 6px; border-radius: 4px; font-weight: 700; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .works-text strong { color: var(--navy); font-weight: 700; }
 .works-form-message { border-left: 4px solid var(--orange); margin-top: 30px !important; padding: 10px 0 10px 20px; }
+.works-contact { margin-top: 24px; }
+.works-contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.works-contact-actions a { display: inline-flex; align-items: center; justify-content: center; padding: 12px 18px; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; }
+.works-contact-whatsapp { background: #157a43; color: #fff; }
+.works-contact-whatsapp:hover { background: #106035; }
+.works-contact-email { background: var(--orange); color: var(--navy); }
+.works-contact-email:hover { background: #ffc157; }
+.works-contact-actions a:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
 .works-template { margin: 24px 0 30px !important; }
 .works-template a {
   align-items: center;
