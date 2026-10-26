@@ -86,6 +86,22 @@ const speakers = {
       'É membro do Programa de Pós-Graduação Profissional em Ensino de Física (MNPEF), Polo 11, e da Residência Multiprofissional em Física Médica – Radiodiagnóstico. Coordena o curso de graduação de Física Médica da Universidade Federal de Sergipe.'
     ]
   },
+  tania: {
+    name: 'Profa. Dra. Tânia Rodrigues',
+    role: 'Médica · Professora · UFS',
+    initials: 'TR',
+    lattes: 'http://lattes.cnpq.br/4728295963156704',
+    day: '05/11',
+    time: '10:00',
+    talk: 'Anatomia Radiológica',
+    bio: [
+      'Graduada em Medicina pela Universidade Federal do Ceará (1987), mestre pelo Curso de Cirurgia Cardiovascular e Cardiologia da Fundação Cardiovascular São Francisco de Assis (1998) e doutora em Ciências da Saúde – Genética Molecular pela Universidade de Brasília (2006). Durante o doutorado, desenvolveu pesquisa com ferramenta molecular na Universidade de Wisconsin/Madison, nos Estados Unidos (2002–2003).',
+      'Professora Titular de Anatomia Humana da Universidade Federal de Sergipe (UFS) e 1ª Tesoureira do Conselho Regional de Medicina do Estado de Sergipe (CREMESE). É membro efetivo das Sociedades Brasileiras de Anatomia e de Cardiologia, das Sociedades Sergipana e Paulista de Cardiologia e da Comissão Científica Nacional do Fórum Científico/Fundação Cardiovascular São Francisco de Assis – SERVICOR, de Belo Horizonte.',
+      'Representante do Departamento de Morfologia no Conselho do Departamento de Medicina da UFS e Fellow of the Academy of Cardiovascular Sciences, da Universidade de Manitoba, em Winnipeg, Canadá.',
+      'Integra o Núcleo de Pós-Graduação em Biologia Parasitária e colabora com o Núcleo de Pós-Graduação em Educação Física. É professora permanente do Programa de Pós-Graduação em Biologia Parasitária (PROBP/UFS), na linha de pesquisa “Avaliação de expressão molecular em portadores de doença valvar”, e professora colaboradora do Programa de Pós-Graduação em Educação Física (PPGEF/UFS).',
+      'Coordenadora do grupo de pesquisa de Anatomia Molecular/CNPq e do projeto de extensão Museu de Anatomia Humana Professor Osvaldo da Cruz Leite/DMO/UFS. Suas linhas de pesquisa incluem expressão e endotelina, morfometria fetal e embriogênese do coração.'
+    ]
+  },
   alanna: {
     name: 'Alanna Santos',
     role: 'Física Médica · Residente em Radiodiagnóstico',
