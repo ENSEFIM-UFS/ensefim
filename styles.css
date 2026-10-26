@@ -191,14 +191,12 @@ a.sponsor-logo { transition: transform .2s ease, box-shadow .2s ease; }
 a.sponsor-logo:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0, 59, 88, .1); }
 a.sponsor-logo:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
 .sponsor-logo img { display: block; width: auto; height: auto; max-width: 100%; max-height: 140px; object-fit: contain; }
-.sponsor-logos-patrons { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px; }
-.sponsor-logos-patrons .sponsor-logo { width: 100%; }
+.sponsor-logos-patrons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 32px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.sponsor-logos-patrons .sponsor-logo { width: 100%; min-height: 190px; }
+.sponsor-logos-patrons img { width: 240px; max-height: 180px; }
 .sponsor-logos-patrons img[src*="/alvorad.png"],
 .sponsor-logos-patrons img[src*="/ifm.png"] { transform: scale(1.2); }
 .sponsor-logos-patrons img[src*="/mca.png"] { transform: scale(1.1); }
-@media (min-width: 601px) and (max-width: 900px) {
-  .sponsor-logos-patrons { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
 .sponsor-tier-master { padding: 24px 0 30px; }
 .sponsor-logos-master { margin-top: 20px; }
 .sponsor-logos-master .sponsor-logo { width: 220px; min-height: 120px; }
@@ -209,6 +207,8 @@ a.sponsor-logo:focus-visible { outline: 3px solid var(--orange); outline-offset:
   .sponsor-logos-patrons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sponsor-logo { width: calc(50% - 8px); min-height: 110px; padding: 8px; }
   .sponsor-logo img { max-height: 110px; }
+  .sponsor-logos-patrons .sponsor-logo { min-height: 140px; }
+  .sponsor-logos-patrons img { max-height: 130px; }
   .sponsor-logos-master .sponsor-logo { width: min(100%, 200px); }
   .sponsor-logos-master img { max-height: 130px; }
 }
