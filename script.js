@@ -148,7 +148,7 @@ const speakers = {
     ]
   },
   izabela: {
-    name: 'Dra. Izabela Teles',
+    name: 'Dra. Izabela Matos',
     role: 'Física Médica · Radioterapia · Hospital do Amor/Lagarto',
     photo: 'assets/palestrantes/izabela.png',
     lattes: 'http://lattes.cnpq.br/5643734964129586',
