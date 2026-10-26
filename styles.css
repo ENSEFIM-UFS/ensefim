@@ -191,7 +191,6 @@ a.sponsor-logo { transition: transform .2s ease, box-shadow .2s ease; }
 a.sponsor-logo:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0, 59, 88, .1); }
 a.sponsor-logo:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
 .sponsor-logo img { display: block; width: auto; height: auto; max-width: 100%; max-height: 140px; object-fit: contain; }
-.sponsor-logo-rdc { background: var(--navy); }
 .sponsor-logos-master .sponsor-logo { width: 320px; }
 .sponsor-logos-master img { max-height: 210px; }
 @media (max-width: 600px) {
