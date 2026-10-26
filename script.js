@@ -89,7 +89,7 @@ const speakers = {
   tania: {
     name: 'Profa. Dra. Tânia Rodrigues',
     role: 'Médica · Professora · UFS',
-    initials: 'TR',
+    photo: 'assets/palestrantes/tania.png',
     lattes: 'http://lattes.cnpq.br/4728295963156704',
     day: '05/11',
     time: '10:00',
