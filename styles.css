@@ -1484,6 +1484,9 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-presentation .presenter-juliana { --portrait-size: 135%; --portrait-left: -17%; --portrait-top: -10.5%; object-position: 50% 35%; }
 .program-presentation .presenter-leticia { --portrait-size: 125%; --portrait-left: -13%; --portrait-top: -8%; object-position: 50% 35%; }
 .program-presentation .presenter-isabel { object-position: 55% 40%; }
+.program-presentation .presenter-emilly { --portrait-size: 135%; --portrait-left: -17%; --portrait-top: -14%; object-position: 50% 50%; }
+.program-presentation .presenter-gabriel { object-position: 50% 35%; }
+.program-presentation .presenter-misia { object-position: 50% 55%; }
 .program-item-break .program-event { display: flex; align-items: center; gap: 14px; padding: 0; border: 0; background: transparent; }
 .program-item-break .program-event h3 { font-size: 1rem; }
 @media (max-width: 600px) {
