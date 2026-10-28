@@ -1472,6 +1472,7 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-people { display: grid; grid-template-columns: 1fr; gap: 12px; }
 .program-person { flex: initial; padding: 0; border: 0; border-radius: 0; background: transparent; }
 .program-person img { width: 50px; height: 50px; }
+.program-people-featured .program-person img { width: 60px; height: 60px; }
 .program-person strong { color: var(--blue); font-size: .9rem; }
 .program-presentations { display: grid; gap: 24px; }
 .program-presentation h4 { margin: 0 0 12px; color: var(--navy); font-size: 1rem; line-height: 1.5; }
