@@ -1477,16 +1477,7 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-presentations { display: grid; gap: 24px; }
 .program-presentation h4 { margin: 0 0 12px; color: var(--navy); font-size: 1rem; line-height: 1.5; }
 .program-person > .program-presenter-photo { display: block; position: relative; flex: none; box-sizing: border-box; width: 46px; height: 46px; overflow: hidden; border: 2px solid #8dd5ed; border-radius: 50%; background: #e7f1f3; }
-.program-presentation .program-presenter-photo img { display: block; position: static; width: 42px; height: 42px; max-width: none; border-radius: 0; object-fit: cover; image-rendering: auto; }
-.program-presentation .presenter-caroline { object-position: 50% 30%; }
-.program-presentation .presenter-lizandra { object-position: 35% 22%; }
-.program-presentation .presenter-victoria { object-position: 48% 28%; }
-.program-presentation .presenter-juliana { object-position: 50% 35%; }
-.program-presentation .presenter-leticia { object-position: 50% 35%; }
-.program-presentation .presenter-isabel { object-position: 55% 40%; }
-.program-presentation .presenter-emilly { object-position: 50% 40%; }
-.program-presentation .presenter-gabriel { object-position: 50% 35%; }
-.program-presentation .presenter-misia { object-position: 50% 55%; }
+.program-presentation .program-presenter-photo img { display: block; position: static; width: 42px; height: 42px; max-width: none; border-radius: 0; object-fit: contain; object-position: center; image-rendering: auto; }
 .program-item-break .program-event { display: flex; align-items: center; gap: 14px; padding: 0; border: 0; background: transparent; }
 .program-item-break .program-event h3 { font-size: 1rem; }
 @media (max-width: 600px) {
