@@ -1477,12 +1477,12 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-presentations { display: grid; gap: 24px; }
 .program-presentation h4 { margin: 0 0 12px; color: var(--navy); font-size: 1rem; line-height: 1.5; }
 .program-person > .program-presenter-photo { display: block; position: relative; flex: none; box-sizing: border-box; width: 46px; height: 46px; overflow: hidden; border: 2px solid #8dd5ed; border-radius: 50%; background: #e7f1f3; }
-.program-presentation .program-presenter-photo img { position: absolute; width: 100%; height: 100%; max-width: none; border-radius: 0; object-fit: cover; }
-.program-presentation .presenter-caroline { object-position: 50% 30%; transform: scale(1.75); transform-origin: 48% 35%; }
-.program-presentation .presenter-lizandra { object-position: 35% 22%; transform: scale(1.1); transform-origin: 35% 35%; }
-.program-presentation .presenter-victoria { object-position: 48% 28%; transform: scale(1.3); transform-origin: 45% 35%; }
-.program-presentation .presenter-juliana { object-position: 50% 35%; transform: scale(1.35); transform-origin: 48% 30%; }
-.program-presentation .presenter-leticia { object-position: 50% 35%; transform: scale(1.25); transform-origin: 53% 32%; }
+.program-presentation .program-presenter-photo img { position: absolute; width: var(--portrait-size, 100%); height: var(--portrait-size, 100%); left: var(--portrait-left, 0); top: var(--portrait-top, 0); max-width: none; border-radius: 0; object-fit: cover; }
+.program-presentation .presenter-caroline { --portrait-size: 175%; --portrait-left: -36%; --portrait-top: -26%; object-position: 50% 30%; }
+.program-presentation .presenter-lizandra { --portrait-size: 110%; --portrait-left: -3.5%; --portrait-top: -3.5%; object-position: 35% 22%; }
+.program-presentation .presenter-victoria { --portrait-size: 130%; --portrait-left: -13.5%; --portrait-top: -10.5%; object-position: 48% 28%; }
+.program-presentation .presenter-juliana { --portrait-size: 135%; --portrait-left: -17%; --portrait-top: -10.5%; object-position: 50% 35%; }
+.program-presentation .presenter-leticia { --portrait-size: 125%; --portrait-left: -13%; --portrait-top: -8%; object-position: 50% 35%; }
 .program-presentation .presenter-isabel { object-position: 55% 40%; }
 .program-item-break .program-event { display: flex; align-items: center; gap: 14px; padding: 0; border: 0; background: transparent; }
 .program-item-break .program-event h3 { font-size: 1rem; }
