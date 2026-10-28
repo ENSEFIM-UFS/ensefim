@@ -1458,6 +1458,7 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-panel { min-height: 0; padding: 8px 0 32px; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
 .program-panel h2 { margin: 0 0 24px; }
 .program-period { margin: -14px 0 24px; }
+.program-timeline + .program-period { margin: 20px 0 28px; padding-top: 24px; border-top: 1px solid #e5e7eb; }
 .program-timeline { position: relative; display: grid; gap: 0; }
 .program-timeline::before { position: absolute; top: 8px; bottom: 30px; left: 126px; width: 2px; background: #e5e7eb; content: ''; }
 .program-item { position: relative; grid-template-columns: 112px minmax(0, 1fr); gap: 32px; padding: 0 0 26px; }
