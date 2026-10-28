@@ -1395,7 +1395,7 @@ body.speaker-dialog-open { overflow: hidden; }
 .program-heading { max-width: 720px; margin-bottom: 42px; }
 .program-heading h1 { color: var(--navy); font-family: var(--display); font-size: clamp(2.8rem, 5vw, 4.8rem); letter-spacing: -.07em; line-height: 1; margin: 18px 0; }
 .program-heading > p:last-child { color: #526d7e; line-height: 1.6; }
-.program-days { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
+.program-days { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
 .program-day { display: flex; flex-direction: column; gap: 8px; padding: 18px 22px; border: 1px solid #dce8e9; border-radius: 16px; background: #f4f7f7; color: var(--ink); text-align: left; cursor: pointer; transition: background .2s, border-color .2s, transform .2s; }
 .program-day:hover { transform: translateY(-2px); border-color: var(--cyan); }
 .program-day[aria-selected="true"] { border-color: var(--blue); background: var(--navy); color: #fff; }
@@ -1428,7 +1428,7 @@ body.speaker-dialog-open { overflow: hidden; }
 @media (max-width: 600px) {
   .program-section { padding: 54px 20px 72px; }
   .program-heading { margin-bottom: 30px; }
-  .program-days { gap: 8px; }
+  .program-days { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .program-day { padding: 14px 12px; }
   .program-day strong { font-size: 1.08rem; }
   .program-panel { min-height: 200px; }
@@ -1475,6 +1475,11 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-people-featured .program-person img { width: 66px; height: 66px; }
 .program-person strong { color: var(--blue); font-size: .9rem; }
 .program-presentations { display: grid; gap: 24px; }
+.program-poster-day + .program-poster-day { margin-top: 40px; padding-top: 32px; border-top: 1px solid #e7eeee; }
+.program-poster-day > h3 { margin: 0 0 24px; color: var(--navy); font-family: var(--display); font-size: 1.2rem; }
+.program-poster-day > .program-timeline + .program-period { margin-top: 28px; }
+.program-posters .program-presentations { margin-top: 24px; }
+.program-poster-author { margin: 0; color: var(--blue); font-weight: 600; line-height: 1.5; }
 .program-presentation h4 { margin: 0 0 12px; color: var(--navy); font-size: 1rem; line-height: 1.5; }
 .program-person > .program-presenter-photo { display: block; flex: none; width: 50px; height: 50px; overflow: visible; border: 0; border-radius: 0; background: transparent; }
 .program-presentation .program-presenter-photo img { display: block; width: 50px; height: 50px; max-width: none; border: 0; border-radius: 0; background: transparent; object-fit: contain; object-position: center; }

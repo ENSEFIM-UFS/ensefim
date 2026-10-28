@@ -317,7 +317,7 @@ const speakers = {
     photo: 'assets/palestrantes/william.png',
     lattes: 'https://lattes.cnpq.br/5150139546603006',
     day: '05/11',
-    time: '14:20',
+    time: '13:00',
     talk: 'Monte Carlo na Física Médica: Dosimetria, Imagem e Proteção Radiológica',
     bio: [
       'Professor Adjunto da Universidade Federal de Sergipe (UFS) e bolsista de produtividade do CNPq (PQ Nível C). Atua também na Residência em Física Médica em Radiodiagnóstico do Hospital Universitário (HU-UFS) e como docente permanente nos Programas de Pós-Graduação em Física (UFS) e em Engenharia Biomédica (PPGEB/UFU).',
