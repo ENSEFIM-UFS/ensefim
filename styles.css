@@ -1481,6 +1481,9 @@ body.speaker-dialog-fallback-open::before { position: fixed; inset: 0; z-index: 
 .program-presentation .presenter-caroline { object-position: 50% 30%; transform: scale(1.75); transform-origin: 48% 35%; }
 .program-presentation .presenter-lizandra { object-position: 35% 22%; transform: scale(1.1); transform-origin: 35% 35%; }
 .program-presentation .presenter-victoria { object-position: 48% 28%; transform: scale(1.3); transform-origin: 45% 35%; }
+.program-presentation .presenter-juliana { object-position: 50% 35%; transform: scale(1.35); transform-origin: 48% 30%; }
+.program-presentation .presenter-leticia { object-position: 50% 35%; transform: scale(1.25); transform-origin: 53% 32%; }
+.program-presentation .presenter-isabel { object-position: 55% 40%; }
 .program-item-break .program-event { display: flex; align-items: center; gap: 14px; padding: 0; border: 0; background: transparent; }
 .program-item-break .program-event h3 { font-size: 1rem; }
 @media (max-width: 600px) {
