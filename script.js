@@ -41,6 +41,16 @@ programTabs.forEach((tab, index) => {
   });
 });
 
+document.querySelectorAll('[data-program-link]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const tab = programTabs.find((item) => item.dataset.programDay === link.dataset.programLink);
+    if (!tab) return;
+    event.preventDefault();
+    selectProgramDay(tab, true);
+    tab.scrollIntoView({ block: 'center' });
+  });
+});
+
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
 const scrollSpyLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));

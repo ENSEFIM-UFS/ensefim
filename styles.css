@@ -1423,6 +1423,8 @@ body.speaker-dialog-open { overflow: hidden; }
 .program-person small { color: #68808e; font-size: .68rem; }
 .program-person strong { color: var(--ink); font-size: .84rem; line-height: 1.35; }
 .program-coming-soon { margin: 18px 0 0; color: #68808e; font-size: .85rem; }
+.program-session-details { margin: 18px 0 0; line-height: 1.5; }
+.program-session-details a { color: var(--blue); font-weight: 600; text-underline-offset: 3px; }
 .program-item-break .program-event { display: flex; align-items: center; gap: 14px; border-color: #f1d9b5; background: #fff9ef; }
 .program-item-break .program-event h3 { font-size: 1.1rem; }
 @media (max-width: 600px) {
