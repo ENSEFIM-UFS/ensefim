@@ -73,6 +73,20 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  divanizia: {
+    name: 'Profa. Dra. Divanizia do Nascimento Souza',
+    role: 'Professora · Departamento de Física · UFS',
+    photo: 'assets/palestrantes/divanizia.png',
+    lattes: 'http://lattes.cnpq.br/3897283209013869',
+    day: '06/11',
+    time: '08:00',
+    talkType: 'Participação',
+    talk: 'Considerações Iniciais',
+    bio: [
+      'Doutora em Tecnologia Nuclear pela Universidade de São Paulo (2002) e mestre em Física pela Universidade Federal de Sergipe (1997).',
+      'Professora do Departamento de Física da UFS, com atuação em dosimetria das radiações e ensino de Matemática e Física.'
+    ]
+  },
   ariadny: {
     name: 'Ma. Ariadny Thayla Machado',
     role: 'Física Médica · Residente em Radiodiagnóstico',
