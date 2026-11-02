@@ -311,7 +311,7 @@ const speakers = {
     photo: 'assets/palestrantes/naiara.png',
     lattes: 'http://lattes.cnpq.br/6299684461378331',
     day: '06/11',
-    time: '08:00',
+    time: '08:20',
     talk: 'Uma breve conversa sobre teranóstico',
     bio: [
       'Licenciada em Física pela Universidade Federal do Recôncavo da Bahia.',
