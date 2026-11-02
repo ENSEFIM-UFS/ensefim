@@ -73,6 +73,20 @@ window.addEventListener('scroll', updateActiveLink, { passive: true });
 updateActiveLink();
 
 const speakers = {
+  ladyjane: {
+    name: 'Dra. Ladyjane Assemany',
+    role: 'Física Médica · Radiodiagnóstico',
+    photo: 'assets/palestrantes/ladyjane.png',
+    lattes: 'http://lattes.cnpq.br/2049593592637820',
+    day: '05/11',
+    time: '16:00',
+    talkType: 'Mesa redonda · Coordenadora de mesa',
+    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
+    bio: [
+      'Graduada em Física Médica pela Universidade Federal de Sergipe (UFS). Mestra em Programa de Tecnologia Nuclear – Aplicações pelo IPEN (2016). Doutora em Tecnologia Nuclear pelo Instituto de Pesquisas Energéticas e Nucleares (IPEN).',
+      'Atualmente atua como Física Médica na MCA – Soluções em Radioproteção e Radiodiagnóstico, realizando controle de qualidade em equipamentos de diagnóstico por imagem, serviço de proteção radiológica e treinamento e orientação de equipes.'
+    ]
+  },
   divanizia: {
     name: 'Profa. Dra. Divanizia do Nascimento Souza',
     role: 'Professora · Departamento de Física · UFS',
