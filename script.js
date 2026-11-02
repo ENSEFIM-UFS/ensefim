@@ -274,6 +274,21 @@ const speakers = {
       'Atualmente atua como Físico Médico na Coordenação de Vigilância Sanitária da Secretaria de Estado da Saúde (COVISA/SES), com experiência em inspeções sanitárias em serviços de diagnóstico por imagem, e é ponto focal do Projeto Nacional de Harmonização das Ações de Inspeção Sanitária em Serviços de Saúde e de Interesse para a Saúde da Agência Nacional de Vigilância Sanitária (ANVISA).'
     ]
   },
+  ebert: {
+    name: 'Ebert dos Santos Silva',
+    role: 'Físico Médico · Radiodiagnóstico · HUUNIVASF/EBSERH',
+    photo: 'assets/palestrantes/ebert.png',
+    lattes: 'http://lattes.cnpq.br/2673951086852509',
+    day: '05/11',
+    time: '08:30',
+    talkType: 'Mesa redonda',
+    talk: 'Raios X no leito é realmente necessário?',
+    bio: [
+      'Possui graduação em Física Médica pela Universidade Federal de Sergipe (2006/02) e título de especialista em radiodiagnóstico pela Associação Brasileira de Física Médica - ABFM.',
+      'Trabalhou como físico médico na Clínica Santa Anna, foi coordenador e professor do Centro de Estudos Santa Anna. Atuou em medicina nuclear pelo grupo RadTEc nas instituições Hospital São Rafael, Fundação Baiana de Cardiologia e Cardiopulmonar.',
+      'Atualmente é consultor da MCA-soluções em radioproteção e Radiodiagnóstico e Físico médico - Radiodiagnóstico do HUUNIVASF/EBSERH.'
+    ]
+  },
   jonas: {
     name: 'Jonas Prata',
     role: 'Técnico e Tecnólogo em Radiologia · Supervisor das Aplicações das Técnicas Radiológicas',
