@@ -83,8 +83,7 @@ const speakers = {
     talkType: 'Participação',
     talk: 'Considerações Iniciais',
     bio: [
-      'Doutora em Tecnologia Nuclear pela Universidade de São Paulo (2002) e mestre em Física pela Universidade Federal de Sergipe (1997).',
-      'Professora do Departamento de Física da UFS, com atuação em dosimetria das radiações e ensino de Matemática e Física.'
+      'Concluiu o doutorado em Tecnologia Nuclear pela Universidade de São Paulo em 2002 e o Mestrado em Física na Universidade Federal de Sergipe em 1997. Atualmente é professora titular da Universidade Federal de Sergipe. Atua na área de Física, com ênfase em Física da Matéria Condensada (experimetal), e também em Ensino de Ciências e Matemática. Linhas de pesquisa: Dosimetria das radiações; Física Médica; Instrumentação científica; Propriedades Óticas e Espectroscópicas da Matéria Condensada; Métodos de Ensino das Ciências Naturais e Matemática. Gerado pelo Sistema Interlattes CV-Resumé'
     ]
   },
   ariadny: {
