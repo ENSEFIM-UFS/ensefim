@@ -331,15 +331,26 @@ const speakers = {
       'É membro da CONAE - Comissão Nacional de Educação do Conselho Nacional de Técnicos em Radiologia (CONTER), Imortal da Academia Brasileira de Ciências Radiológicas, ocupando a Cadeira nº 56, e Diretor do INSPIRA Cursos.'
     ]
   },
+  franklin: {
+    name: 'Franklin Leite',
+    role: 'Físico Médico · Medicina Nuclear · RadTec',
+    photo: 'assets/palestrantes/franklin.png',
+    lattes: 'http://lattes.cnpq.br/6201083996132503',
+    day: '05/11',
+    time: '16:00',
+    talkType: 'Mesa redonda',
+    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
+    bio: [
+      'Físico Médico formado pela Universidade Federal de Sergipe (UFS), com formação técnica complementar em Radiologia e Edificações.',
+      'Atualmente, integra a equipe da RadTec no Hospital Cardiopulmonar e no Hospital São Rafael (Rede D\'Or São Luiz), em Salvador (BA). Possui sólida experiência clínica em Medicina Nuclear, Radiodiagnóstico e no acompanhamento de cirurgias radioguiadas.',
+      'No âmbito científico, atuou como pesquisador no Grupo de Anatomia Molecular (GAM/UFS) desenvolvendo estudos em análise de dados de saúde e, hoje, atua como pesquisador colaborador DTI-C no Hospital Universitário Professor Edgard Santos (HUPES/Ebserh).'
+    ]
+  },
   alinne: {
     name: 'Alinne Barreto',
     role: 'Supervisora de Radioproteção · Medicina Nuclear',
     photo: 'assets/palestrantes/alinne.png',
     lattes: 'http://lattes.cnpq.br/9773275808755205',
-    day: '05/11',
-    time: '13:00',
-    talkType: 'Mesa redonda',
-    talk: 'Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica',
     bio: [
       'Física Médica, graduada pela Universidade Federal de Sergipe (UFS), especialista em Medicina Nuclear pelo HCFMUSP e Supervisora de Proteção Radiológica em Medicina Nuclear.',
       'Possui mais de 12 anos de experiência na área, com atuação em instituições de referência como HC/USP, ICESP, InCor, Hospital Israelita Albert Einstein e Grupo Fleury.',
