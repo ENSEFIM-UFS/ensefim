@@ -17,10 +17,17 @@
       const status = document.getElementById(validation ? 'validation-status' : 'search-status');
       const results = document.getElementById(validation ? 'validation-results' : 'search-results');
       results.replaceChildren();
-      const matches = valid.filter(item => normalizeCode(item.codigo) === normalizeCode(input) || (!validation && normalizeName(item.nome) === normalizeName(input)));
+      const nameQuery = normalizeName(input);
+      const nameParts = nameQuery.split(' ').filter(Boolean);
+      if (!validation && nameQuery.length < 3) {
+        status.textContent = 'Digite pelo menos 3 caracteres do nome ou o código completo do certificado.';
+        return;
+      }
+      const matches = valid.filter(item => normalizeCode(item.codigo) === normalizeCode(input) ||
+        (!validation && nameParts.length > 0 && nameParts.every(part => normalizeName(item.nome).includes(part))));
       status.textContent = matches.length
         ? (validation ? 'Certificado válido. Compare os dados abaixo com o documento apresentado.' : `${matches.length} certificado(s) encontrado(s).`)
-        : (validation ? 'Código não encontrado na base de certificados publicados. Confira o código ou entre em contato com a organização.' : 'Nenhum certificado encontrado. Digite seu nome completo ou o código do certificado. Novas categorias serão liberadas pela organização.');
+        : (validation ? 'Código não encontrado na base de certificados publicados. Confira o código ou entre em contato com a organização.' : 'Nenhum certificado encontrado. Tente parte do seu nome ou o código completo do certificado. Novas categorias serão liberadas pela organização.');
       matches.forEach(item => {
         const card = document.createElement('article'); card.className = 'certificate-card';
         appendText(card, 'p', item.tipo).className = 'certificate-type';

@@ -4,7 +4,7 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A bas
 
 ## Consultas
 
-- **Meus certificados:** nome completo ou código. A busca pelo nome ignora acentos, maiúsculas e espaços repetidos, mas exige o nome completo.
+- **Meus certificados:** nome ou código. A busca pelo nome ignora acentos, maiúsculas e espaços repetidos, e aceita partes do nome em qualquer ordem (mínimo de 3 caracteres).
 - **Valide o certificado:** apenas código. Mostra o titular, a categoria e o título do trabalho, para comparação com o documento.
 - Cada resultado oferece visualização no Drive e download do PDF.
 - Nos trabalhos, o titular é a coluna **Apresentador**, nunca a lista de coautores. Outros certificados podem usar a coluna **Nome**.

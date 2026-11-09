@@ -38,17 +38,17 @@
     <main class="certificates-main" id="inicio">
       <p class="eyebrow eyebrow-dark"><span></span> I Encontro Sergipano de Física Médica</p>
       <h1>Certificados<span class="title-dot">.</span></h1>
-      <p class="certificates-intro">Encontre e baixe seus certificados pelo nome completo ou código. Confira também a autenticidade de um certificado.</p>
+      <p class="certificates-intro">Encontre e baixe seus certificados pelo nome ou código. Confira também a autenticidade de um certificado.</p>
       <section class="certificate-panel" aria-labelledby="search-title">
         <h2 id="search-title">Meus certificados</h2>
-        <p>Digite seu nome completo ou o código do certificado para visualizar e baixar o PDF.</p>
+        <p>Digite seu nome ou o código do certificado para visualizar e baixar o PDF.</p>
         <form data-certificate-form="search">
-          <label for="certificate-search">Nome completo ou código do certificado</label>
+          <label for="certificate-search">Nome ou código do certificado</label>
           <div class="certificate-fields">
-            <input id="certificate-search" name="consulta" type="text" autocomplete="name" maxlength="254" required placeholder="Seu nome completo ou código">
+            <input id="certificate-search" name="consulta" type="text" autocomplete="name" maxlength="254" required placeholder="Seu nome ou código">
             <button type="submit">Buscar certificados</button>
           </div>
-          <small>Nos trabalhos científicos, a busca usa o nome do autor que apresentou o trabalho. Acentos e letras maiúsculas não alteram a busca.</small>
+          <small>Nos trabalhos científicos, a busca usa o nome do autor que apresentou o trabalho. Pode digitar apenas parte do nome, com pelo menos 3 caracteres. Se aparecer mais de uma pessoa, confira o nome completo e o trabalho no resultado. Acentos e letras maiúsculas não alteram a busca.</small>
         </form>
         <p id="search-status" class="certificate-status" role="status" aria-live="polite"></p>
         <div id="search-results" aria-label="Certificados encontrados"></div>
@@ -76,6 +76,6 @@
     </footer>
     <script src="script.js?v=20261026-1"></script>
     <script src="certificados-dados.js?v=20261109-5"></script>
-    <script src="certificados.js?v=20261109-5"></script>
+    <script src="certificados.js?v=20261109-6"></script>
   </body>
 </html>
