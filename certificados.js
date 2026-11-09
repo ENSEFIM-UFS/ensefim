@@ -18,16 +18,21 @@
       const results = document.getElementById(validation ? 'validation-results' : 'search-results');
       results.replaceChildren();
       const nameQuery = normalizeName(input);
-      const nameParts = nameQuery.split(' ').filter(Boolean);
-      if (!validation && nameQuery.length < 3) {
-        status.textContent = 'Digite pelo menos 3 caracteres do nome ou o código completo do certificado.';
+      const connectors = new Set(['DA', 'DAS', 'DE', 'DO', 'DOS', 'E']);
+      const nameParts = [...new Set(nameQuery.split(' ').filter(part => part && !connectors.has(part)))];
+      const exactCode = valid.some(item => normalizeCode(item.codigo) === normalizeCode(input));
+      if (!validation && !exactCode && nameParts.length < 2) {
+        status.textContent = 'Digite seu nome e pelo menos um sobrenome ou segundo nome, ou informe o código completo do certificado.';
         return;
       }
       const matches = valid.filter(item => normalizeCode(item.codigo) === normalizeCode(input) ||
-        (!validation && nameParts.length > 0 && nameParts.every(part => normalizeName(item.nome).includes(part))));
+        (!validation && nameParts.length >= 2 && (() => {
+          const fullName = normalizeName(item.nome).split(' ');
+          return nameParts.includes(fullName[0]) && nameParts.every(part => fullName.includes(part));
+        })()));
       status.textContent = matches.length
         ? (validation ? 'Certificado válido. Compare os dados abaixo com o documento apresentado.' : `${matches.length} certificado(s) encontrado(s).`)
-        : (validation ? 'Código não encontrado na base de certificados publicados. Confira o código ou entre em contato com a organização.' : 'Nenhum certificado encontrado. Tente parte do seu nome ou o código completo do certificado. Novas categorias serão liberadas pela organização.');
+        : (validation ? 'Código não encontrado na base de certificados publicados. Confira o código ou entre em contato com a organização.' : 'Nenhum certificado encontrado. Confira seu nome e sobrenome ou segundo nome, ou o código completo do certificado. Novas categorias serão liberadas pela organização.');
       matches.forEach(item => {
         const card = document.createElement('article'); card.className = 'certificate-card';
         appendText(card, 'p', item.tipo).className = 'certificate-type';
