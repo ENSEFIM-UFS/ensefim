@@ -79,5 +79,77 @@ window.ENSEFIM_CERTIFICADOS = [
         "trabalho":  "IMPACTO DOSIMÉTRICO DE DESLOCAMENTOS SISTEMÁTICOS DE 5 MM E JUSTIFICATIVA PARA A VERIFICAÇÃO POR IMAGEM A CADA CINCO DIAS EM RADIOTERAPIA",
         "arquivoId":  "15RbUHnX_rhOE32qKbAwC8iYdgrQxTx-g",
         "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260501",
+        "nome":  "Maria Clara Cabral Soares",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "FUNDAMENTOS FÍSICOS E TECNOLÓGICOS DA ULTRASSONOGRAFIA QUANTITATIVA HEPÁTICA NA MASLD: UMA REVISÃO DE ESCOPO",
+        "arquivoId":  "1vPjeVjjkC7XIC0_bMEfoD5l5vEhnYc2v",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260502",
+        "nome":  "Sara Verônica Matos Santos",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "LESÕES RADIOINDUZIDAS ASSOCIADAS A PROCEDIMENTOS INTERVENCIONISTAS GUIADOS POR FLUOROSCOPIA: REVISÃO DA LITERATURA",
+        "arquivoId":  "1BcoJas_P2jLk7qTGZwl0rKxgstFkbFN0",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260503",
+        "nome":  "Lucca Dantas Pereira de Souza",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "ACIDENTES RADIOLÓGICOS COM FONTES DE ALTA ATIVIDADE: UMA REVISÃO DE CASOS E FALHAS DE SEGURANÇA",
+        "arquivoId":  "1O5ZbeJor6Q8QiscLaZJJjpvSwT_y8VJt",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260504",
+        "nome":  "Laura Maria Gervazio da Silva",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "DESEMPENHO DIAGNÓSTICO DO COEFICIENTE DE ATENUAÇÃO ULTRASSONOGRÁFICA NA DETECÇÃO DE ESTEATOSE HEPÁTICA",
+        "arquivoId":  "1yS46bXBmxb_JXVJ12S-YTopbH-g_fwdP",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260505",
+        "nome":  "Mahirê Mota e Silva",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "EFICÁCIA DO AVENTAL PLUMBÍFERO NA ATENUAÇÃO DA RADIAÇÃO ESPALHADA EM LEITOS ADJACENTES DURANTE RADIOGRAFIAS MÓVEIS EM UTI",
+        "arquivoId":  "18BUe8qXNe-Jgn7pcAIyOSWl8NRStIBnw",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260506",
+        "nome":  "Lizandra de Almeida Oliveira",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "USO DA INTELIGÊNCIA ARTIFICIAL DENTRO DOS PRINCÍPIOS DA RADIOPROTEÇÃO NA TOMOGRAFIA COMPUTADORIZADA",
+        "arquivoId":  "169n5noNW4LGiQJ8VUbCEryoIyAzx15kE",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260507",
+        "nome":  "Luana Beatriz Cavalcante Ferreira",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "O USO DE SIMULADORES BIOLÓGICOS (FANTOMAS) COMO FERRAMENTA DIDÁTICA PARA O ENSINO DA ULTRASSONOGRAFIA E AVALIAÇÃO DA QUALIDADE DA IMAGEM: UMA REVISÃO DE LITERATURA",
+        "arquivoId":  "1F1Al51Wbr69yHfXn6pXAdwPFN6pRqYnO",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260508",
+        "nome":  "Anna Rebecca Cunha Barbosa",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "COMPARAÇÃO DA QUALIDADE DA IMAGEM ENTRE RADIOGRAFIA COMPUTADORIZADA (CR) E RADIOGRAFIA DIGITAL (DR)",
+        "arquivoId":  "1WDsNkRRFZ_khRQ8UdmUHHeOM68QWCfTw",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260509",
+        "nome":  "Luana Beatriz Cavalcante Ferreira",
+        "tipo":  "Apresentação de pôster",
+        "trabalho":  "REVISÃO BIBLIOGRÁFICA SOBRE A TÉCNICA DA TOMOSSÍNTESE: A PERSPECTIVA DE CONSTRUÇÃO DE UM SIMULADOR ESPECÍFICO",
+        "arquivoId":  "1qj9My8O8kp3AOZoDsb0BZptMz7fadt5-",
+        "situacao":  "emitido"
     }
 ];

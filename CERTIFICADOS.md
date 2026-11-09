@@ -1,6 +1,6 @@
 # Certificados do ENSEFIM
 
-A página `certificados.html` funciona no site estático, sem Apps Script. A primeira etapa inclui 10 certificados de apresentação oral da planilha fornecida pela organização, conferidos na pasta do Drive.
+A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 10 certificados de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
 
 ## Consultas
 
@@ -12,7 +12,7 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A pri
 
 ## Atualizar e acrescentar categorias
 
-As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: comissão científica, comissão organizadora, visita técnica, apresentação de pôster e participação.
+As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: comissão científica, comissão organizadora, visita técnica e participação.
 
 Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, **Apresentador** (trabalhos) ou **Nome** (demais categorias) e **LINK DO CERTIFICADO**. **TÍTULO DO TRABALHO** é opcional. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
 
@@ -28,6 +28,6 @@ Revise o diff e publique os arquivos alterados pelo Git. A atualização é feit
 
 ## Dados e autenticidade
 
-A base pública contém somente código, nome do titular, categoria, trabalho, ID do PDF e situação. Não exporta e-mails nem a lista de coautores. Os dados publicados e PDFs são públicos, conforme necessário para consulta sem login. A validação confirma o cadastro oficial publicado; não compara o conteúdo binário de um PDF apresentado pelo visitante. É necessário conferir os dados retornados com o documento. Códigos duplicados e registros sem situação `emitido` não são aceitos na página.
+A base pública contém somente código, nome do titular, categoria, trabalho, ID do PDF e situação. Não exporta e-mails, hashes de e-mails nem a lista de coautores. Os dados publicados e PDFs são públicos, conforme necessário para consulta sem login. A validação confirma o cadastro oficial publicado; não compara o conteúdo binário de um PDF apresentado pelo visitante. É necessário conferir os dados retornados com o documento. Códigos duplicados e registros sem situação `emitido` não são aceitos na página.
 
 Os PDFs são abertos e baixados diretamente do Google Drive; a organização deve manter os arquivos acessíveis. Alterações de permissões ou exclusões posteriores à sincronização exigem nova conferência e publicação.
