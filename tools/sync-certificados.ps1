@@ -18,6 +18,7 @@ foreach ($source in $sources) {
     $name = ([string]$row.Apresentador).Trim()
     if (-not $name) { $name = ([string]$row.Nome).Trim() }
     if (-not $name) { $name = ([string]$row.PALESTRANTE).Trim() }
+    if ($source.colunaNome) { $name = ([string]$row.($source.colunaNome)).Trim() }
     $link = ([string]$row.'LINK DO CERTIFICADO').Trim()
     if (-not $name -or $link -notmatch '^https://drive\.google\.com/file/d/([A-Za-z0-9_-]+)/') { throw "Nome ou PDF ausente: $code" }
     $fileId = $Matches[1]
