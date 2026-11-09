@@ -1,6 +1,6 @@
 # Certificados do ENSEFIM
 
-A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 13 certificados da comissão organizadora, 17 de palestrantes, 10 de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
+A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 19 certificados da comissão científica, 13 da comissão organizadora, 17 de palestrantes, 10 de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
 
 ## Consultas
 
@@ -12,7 +12,7 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A bas
 
 ## Atualizar e acrescentar categorias
 
-As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: comissão científica, visita técnica e participação.
+As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: visita técnica e participação.
 
 Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, **Apresentador** (trabalhos) , **PALESTRANTE** (palestrantes) ou **Nome** (demais categorias) e **LINK DO CERTIFICADO**. **TÍTULO DO TRABALHO** ou **TÍTULO DA PALESTRA** é opcional. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
 
@@ -32,4 +32,4 @@ A base pública contém somente código, nome do titular, categoria, trabalho, I
 
 Os PDFs são abertos e baixados diretamente do Google Drive; a organização deve manter os arquivos acessíveis. Alterações de permissões ou exclusões posteriores à sincronização exigem nova conferência e publicação.
 
-A fonte da comissão organizadora usa a coluna **Avaliador** como nome do titular, conforme o cabeçalho atual da aba. Essa correspondência está declarada em colunaNome na configuração da fonte; a categoria continua sendo **Comissão organizadora**. Nenhum e-mail dessa aba é exportado.
+As fontes das comissões científica e organizadora usam a coluna **Avaliador** como nome do titular, conforme os cabeçalhos atuais das abas. Essa correspondência é declarada em colunaNome na configuração de cada fonte, preservando a categoria da respectiva comissão. Nenhum e-mail dessa aba é exportado.
