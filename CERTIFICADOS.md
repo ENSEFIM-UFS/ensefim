@@ -1,6 +1,6 @@
 # Certificados do ENSEFIM
 
-A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 10 certificados de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
+A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 17 certificados de palestrantes, 10 de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
 
 ## Consultas
 
@@ -14,7 +14,7 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A bas
 
 As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: comissão científica, comissão organizadora, visita técnica e participação.
 
-Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, **Apresentador** (trabalhos) ou **Nome** (demais categorias) e **LINK DO CERTIFICADO**. **TÍTULO DO TRABALHO** é opcional. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
+Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, **Apresentador** (trabalhos) , **PALESTRANTE** (palestrantes) ou **Nome** (demais categorias) e **LINK DO CERTIFICADO**. **TÍTULO DO TRABALHO** ou **TÍTULO DA PALESTRA** é opcional. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
 
 Execute na raiz do projeto:
 

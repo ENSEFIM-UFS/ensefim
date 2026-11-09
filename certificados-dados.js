@@ -151,5 +151,141 @@ window.ENSEFIM_CERTIFICADOS = [
         "trabalho":  "REVISÃO BIBLIOGRÁFICA SOBRE A TÉCNICA DA TOMOSSÍNTESE: A PERSPECTIVA DE CONSTRUÇÃO DE UM SIMULADOR ESPECÍFICO",
         "arquivoId":  "1qj9My8O8kp3AOZoDsb0BZptMz7fadt5-",
         "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260301",
+        "nome":  "Jonas Prata Estevão dos Santos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Raios X no leito é realmente necessário?",
+        "arquivoId":  "1ZxSq7U2k0dYgglgV2BrzY8PDqc2BAUtY",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260302",
+        "nome":  "Yklys Falcão Rodrigues",
+        "tipo":  "Palestrante",
+        "trabalho":  "Raios X no leito é realmente necessário?",
+        "arquivoId":  "1De3ryd7iGG8SOJkj_t35dI6yGIxzLgtM",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260303",
+        "nome":  "Ebert dos Santos Silva",
+        "tipo":  "Palestrante",
+        "trabalho":  "Raios X no leito é realmente necessário?",
+        "arquivoId":  "1JRDnV_LjVu_ZBIUjstlFPmYiYvTMV6jD",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260304",
+        "nome":  "Cássio Costa Ferreira",
+        "tipo":  "Palestrante",
+        "trabalho":  "Raios X no leito é realmente necessário?",
+        "arquivoId":  "1TSqE8AnNGAI74tcmvsL6xZnup3XaWjFf",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260305",
+        "nome":  "Tânia Maria de Andrade Rodrigues",
+        "tipo":  "Palestrante",
+        "trabalho":  "Indicações da cintilografia: desafios e perspectivas",
+        "arquivoId":  "1tnk_tDak23WJ0O4nDffzs119-cUe1ujT",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260306",
+        "nome":  "William de Souza Santos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Monte Carlo na Física Médica: Dosimetria, Imagem e Proteção Radiológica",
+        "arquivoId":  "1tLhLCSEFFQyF_eipFhSwsYh2oukePth0",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260307",
+        "nome":  "Ladyjane Pereira Fontes Assemany",
+        "tipo":  "Palestrante",
+        "trabalho":  "Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica",
+        "arquivoId":  "1bxzJ-alRk02Rej6j3Bl1ON97ctohpeIt",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260308",
+        "nome":  "Marcela Costa Alcântara Estácio",
+        "tipo":  "Palestrante",
+        "trabalho":  "Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica",
+        "arquivoId":  "1zZj3NHmtywQqalanWAODZHzKPfto736B",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260309",
+        "nome":  "Izabela Teles de Matos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica",
+        "arquivoId":  "1e5_jldv7xzWRGpq5mN5R8950t5my781z",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260310",
+        "nome":  "Franklin Silva Souza Leite",
+        "tipo":  "Palestrante",
+        "trabalho":  "Câncer de mama: integração entre Radiodiagnóstico, Medicina Nuclear e Radioterapia sob o olhar da Física Médica",
+        "arquivoId":  "1uTwWOSree8l1Rxv3v6lnc5zIQH1mzaO0",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260311",
+        "nome":  "Naiara Sales dos Santos Vieira",
+        "tipo":  "Palestrante",
+        "trabalho":  "Uma breve conversa sobre teranóstico",
+        "arquivoId":  "1fd6Cjai41sYke5NtwQlDpwXtcjBgkg3-",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260312",
+        "nome":  "Fabinara Dantas Freire",
+        "tipo":  "Palestrante",
+        "trabalho":  "Da Física à Perícia Criminal: Como a Ciência ajuda a desvendar crimes",
+        "arquivoId":  "1ir42y_sR7mvokkFQiYeWn7M5LcrAsnh2",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260313",
+        "nome":  "Danillo Menezes Oliveira",
+        "tipo":  "Palestrante",
+        "trabalho":  "Gestão da Proteção Radiológica em Serviços de Saúde",
+        "arquivoId":  "1Tg-Ma4sq5G00apKbAiUsbOOKjjMO4MwT",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260314",
+        "nome":  "Luiz Eduardo Andrade Macêdo",
+        "tipo":  "Palestrante",
+        "trabalho":  "Atuação do Físico Médico em radioterapia",
+        "arquivoId":  "1MyznhqAhQB8h7cci51HUf0ebFYfIANGg",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260315",
+        "nome":  "Cássio Costa Ferreira",
+        "tipo":  "Palestrante",
+        "trabalho":  "Cerimonia de Abertura",
+        "arquivoId":  "1XS9WL8lEH_64UzuRdq0V87Cn4mPzJf8f",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260316",
+        "nome":  "William de Souza Santos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Cerimonia de Abertura",
+        "arquivoId":  "1jt7MgChRW28sNnu7DX898Rd7ZMx2EqGP",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260317",
+        "nome":  "José Joatan Rodrigues Júnior",
+        "tipo":  "Palestrante",
+        "trabalho":  "Cerimonia de Abertura",
+        "arquivoId":  "1x_PQqaC6hP-iEaQrYNZkyasGW4zVXsST",
+        "situacao":  "emitido"
     }
 ];

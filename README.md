@@ -4,7 +4,7 @@ Home page do I Encontro Sergipano de Física Médica, com identidade visual insp
 
 ## Certificados
 
-A página `certificados.html` permite encontrar e baixar certificados pelo nome ou código e validar a autenticidade apenas pelo código. Os trabalhos são vinculados ao apresentador. A base pública não contém e-mails nem hashes de e-mails. Consulte [CERTIFICADOS.md](CERTIFICADOS.md) para atualizar os certificados de apresentações orais e de pôster e incluir as demais categorias.
+A página `certificados.html` permite encontrar e baixar certificados pelo nome ou código e validar a autenticidade apenas pelo código. Os trabalhos são vinculados ao apresentador. A base pública não contém e-mails nem hashes de e-mails. Consulte [CERTIFICADOS.md](CERTIFICADOS.md) para atualizar os certificados de palestrantes, apresentações orais e de pôster e incluir as demais categorias.
 
 ## Executar
 O projeto é estático e não exige instalação. Abra `index.html` diretamente no navegador.

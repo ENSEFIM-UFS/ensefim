@@ -17,12 +17,15 @@ foreach ($source in $sources) {
     # Apresentador é o titular para trabalhos, nunca a lista de coautores.
     $name = ([string]$row.Apresentador).Trim()
     if (-not $name) { $name = ([string]$row.Nome).Trim() }
+    if (-not $name) { $name = ([string]$row.PALESTRANTE).Trim() }
     $link = ([string]$row.'LINK DO CERTIFICADO').Trim()
     if (-not $name -or $link -notmatch '^https://drive\.google\.com/file/d/([A-Za-z0-9_-]+)/') { throw "Nome ou PDF ausente: $code" }
     $fileId = $Matches[1]
     if (-not $folder.Contains($fileId)) { throw "PDF não encontrado na pasta oficial: $code" }
     $codes[$code] = $true
-    $records += [ordered]@{ codigo = $code; nome = $name; tipo = $source.tipo; trabalho = ([string]$row.'TÍTULO DO TRABALHO').Trim(); arquivoId = $fileId; situacao = 'emitido' }
+    $title = ([string]$row.'TÍTULO DO TRABALHO').Trim()
+    if (-not $title) { $title = ([string]$row.'TÍTULO DA PALESTRA').Trim() }
+    $records += [ordered]@{ codigo = $code; nome = $name; tipo = $source.tipo; trabalho = $title; arquivoId = $fileId; situacao = 'emitido' }
   }
   if ($rows.Count -eq 0) { throw 'A planilha não retornou registros; a base anterior foi preservada.' }
 }
