@@ -2,8 +2,11 @@
 
 Home page do I Encontro Sergipano de Física Médica, com identidade visual inspirada nos elementos enviados: azul petróleo, azul claro, laranja solar e formas orgânicas ligadas a Sergipe e à Física Médica.
 
-## Executar
+## Certificados
 
+A página `certificados.html` permite encontrar e baixar certificados pelo nome completo ou código e validar a autenticidade apenas pelo código. Os trabalhos são vinculados ao apresentador. A base pública não contém e-mails. Consulte [CERTIFICADOS.md](CERTIFICADOS.md) para atualizar a primeira etapa de apresentações orais e incluir as demais categorias.
+
+## Executar
 O projeto é estático e não exige instalação. Abra `index.html` diretamente no navegador.
 
 Para desenvolvimento local com Node.js, também pode ser servido por qualquer servidor estático, por exemplo:
@@ -22,7 +25,7 @@ Os cards ficam em `palestrantes.html`, as fotos em `assets/palestrantes/` e os c
 
 ## Segurança
 
-O site é estático e não armazena dados de visitantes. As inscrições são enviadas ao Google Forms; consulte [INSCRICOES.md](INSCRICOES.md) para acompanhar e exportar as respostas. A política de segurança em index.html e inscricao.html limita scripts, estilos, fontes e imagens às origens necessárias. Ao adicionar serviços externos, revise essa política antes de publicar.
+O site é estático e não coleta dados de visitantes. A consulta de certificados usa uma base pública de titulares, códigos, trabalhos e links de PDFs, sem e-mails. As inscrições são enviadas ao Google Forms; consulte [INSCRICOES.md](INSCRICOES.md) para acompanhar e exportar as respostas. A política de segurança em index.html e inscricao.html limita scripts, estilos, fontes e imagens às origens necessárias. Ao adicionar serviços externos, revise essa política antes de publicar.
 
 Não coloque tokens, senhas nem dados privados no HTML ou JavaScript: o código do site pode ser visto por qualquer visitante.
 
