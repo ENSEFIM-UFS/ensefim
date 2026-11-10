@@ -6,7 +6,8 @@ $codes = @{}
 foreach ($source in $sources) {
   $url = 'https://docs.google.com/spreadsheets/d/' + $source.planilhaId + '/export?format=csv'
   if ($source.gid) { $url += '&gid=' + [Uri]::EscapeDataString($source.gid) }
-  $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+  $url += '&cachebust=' + [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
+  $response = Invoke-WebRequest -Uri $url -UseBasicParsing -Headers @{ 'Cache-Control' = 'no-cache'; Pragma = 'no-cache' }
   $csv = [Text.Encoding]::UTF8.GetString($response.RawContentStream.ToArray())
   $rows = @($csv | ConvertFrom-Csv)
   $folder = (Invoke-WebRequest -Uri ('https://drive.google.com/drive/folders/' + $source.pastaId) -UseBasicParsing).Content

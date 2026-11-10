@@ -389,7 +389,15 @@ window.ENSEFIM_CERTIFICADOS = [
         "nome":  "Ariadny Thayla Machado",
         "tipo":  "Comissão organizadora",
         "trabalho":  "",
-        "arquivoId":  "1sV2v41kFa-VYZcfJDt9iOFUraAnXCqHl",
+        "arquivoId":  "10HllLGDRseg8FFG4uMWuYochDdAfyjNd",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260714",
+        "nome":  "Edesio Gabriel Batista Vasconcelos",
+        "tipo":  "Comissão organizadora",
+        "trabalho":  "",
+        "arquivoId":  "1DpmGxI1Az5igWm-flzr3WsithDqnF1PX",
         "situacao":  "emitido"
     },
     {
