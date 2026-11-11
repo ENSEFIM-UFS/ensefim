@@ -289,6 +289,86 @@ window.ENSEFIM_CERTIFICADOS = [
         "situacao":  "emitido"
     },
     {
+        "codigo":  "20260318",
+        "nome":  "Alanna Santos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Moderador",
+        "arquivoId":  "1DomFUlmPo6xVNhqPkm8hWQ1h-gz3KcP9",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260319",
+        "nome":  "Ariadny Thayla Machado",
+        "tipo":  "Palestrante",
+        "trabalho":  "Moderador",
+        "arquivoId":  "1Fm_TM6BavHIYXeItCpn4Q-11CbFknvFr",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260320",
+        "nome":  "Luiz Eduardo Andrade Macêdo",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "11IZHnRZ4UHZS7qOy8lSCgzFansAqWw6D",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260321",
+        "nome":  "Edesio Gabriel Batista Vasconcelos",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "1Jp1lDG5TPwTQAMUdVqZE8E7cwDJVlCkc",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260322",
+        "nome":  "Debora Thais Trajano de Sá",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "14GTlMB1tox1QVTNf49IKx-tVeeiDGFxe",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260323",
+        "nome":  "Vinicius Souza Gomes",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "1TyPx_QuCmw5XA8aX9g4u5t_5NQWMe_Zx",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260324",
+        "nome":  "Caroline Fernandes Barros",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "1Gs7wr0J1yJymP6ZZJxclN-n88hXLodo-",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260325",
+        "nome":  "Azontè Mahudin Vital Opportun Mevi",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "15ME9zNz923_IbUu-P8eXHaSf6gYu9OGK",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260326",
+        "nome":  "Marcelo Luis dos Santos Filho",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "1SLO_UZDrAtgreiUH04c8zyyIIrKXeyxf",
+        "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260327",
+        "nome":  "Ariadny Thayla Machado",
+        "tipo":  "Palestrante",
+        "trabalho":  "Apresentador Visita",
+        "arquivoId":  "1vd7SMgocM0OW9JKw-WahOZ7LxmzF_Gbv",
+        "situacao":  "emitido"
+    },
+    {
         "codigo":  "20260701",
         "nome":  "Letícia Santos Teles",
         "tipo":  "Comissão organizadora",
