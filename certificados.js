@@ -27,7 +27,9 @@
       }
       const matches = valid.filter(item => normalizeCode(item.codigo) === normalizeCode(input) ||
         (!validation && nameParts.length >= 2 && (() => {
-          const fullName = normalizeName(item.nome).split(' ');
+          const normalizedName = normalizeName(item.nome);
+          if (normalizedName === 'ARIADNY THAYLA MACHADO') return false;
+          const fullName = normalizedName.split(' ');
           return nameParts.includes(fullName[0]) && nameParts.every(part => fullName.includes(part));
         })()));
       status.textContent = matches.length
