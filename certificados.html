@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20261102-1" />
-    <link rel="stylesheet" href="certificados.css?v=20261109-5" />
+    <link rel="stylesheet" href="certificados.css?v=20261118-1" />
   </head>
   <body>
     <header class="site-header">
@@ -51,6 +51,14 @@
         </form>
         <p id="search-status" class="certificate-status" role="status" aria-live="polite"></p>
         <div id="search-results" aria-label="Certificados encontrados"></div>
+        <aside id="search-legal-note" class="certificate-legal-note" aria-labelledby="search-legal-title" hidden>
+          <h3 id="search-legal-title">Nota legal</h3>
+          <p>O certificado é um documento de comprovação da sua atividade científica no evento. Sua adulteração e uso indevido é ilegal e está sujeita às penas da lei.</p>
+          <p>Decreto Lei nº 2.848 de 07 de Dezembro de 1940</p>
+          <p>Art. 299 - Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante:</p>
+          <p>Pena - reclusão, de um a cinco anos, e multa, se o documento é público, e reclusão de um a três anos, e multa, se o documento é particular.</p>
+          <p>Parágrafo único - Se o agente é funcionário público, e comete o crime prevalecendo-se do cargo, ou se a falsificação ou alteração é de assentamento de registro civil, aumenta-se a pena de sexta parte.</p>
+        </aside>
       </section>
       <section class="certificate-panel" aria-labelledby="validation-title">
         <h2 id="validation-title">Valide o certificado</h2>
@@ -74,6 +82,6 @@
     </footer>
     <script src="script.js?v=20261026-1"></script>
     <script src="certificados-dados.js?v=20261111-1"></script>
-    <script src="certificados.js?v=20261118-1"></script>
+    <script src="certificados.js?v=20261118-2"></script>
   </body>
 </html>

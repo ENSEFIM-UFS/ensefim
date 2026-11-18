@@ -17,4 +17,7 @@
 .certificate-type { color: var(--blue); font-weight: 700; }
 .certificate-links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 18px; }
 .certificate-links a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.certificate-legal-note { margin-top: 24px; padding-top: 16px; border-top: 1px solid #c6dce1; color: #52636b; font-size: 0.875rem; }
+.certificate-legal-note h3 { margin: 0 0 8px; font-size: inherit; }
+.certificate-legal-note p { margin: 8px 0 0; }
 @media (max-width: 600px) { .certificate-fields { flex-direction: column; } .certificate-fields button { min-height: 48px; } }

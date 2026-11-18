@@ -16,7 +16,9 @@
       const input = form.querySelector('input').value;
       const status = document.getElementById(validation ? 'validation-status' : 'search-status');
       const results = document.getElementById(validation ? 'validation-results' : 'search-results');
+      const legalNote = validation ? null : document.getElementById('search-legal-note');
       results.replaceChildren();
+      if (legalNote) legalNote.hidden = true;
       const nameQuery = normalizeName(input);
       const connectors = new Set(['DA', 'DAS', 'DE', 'DO', 'DOS', 'E']);
       const nameParts = [...new Set(nameQuery.split(' ').filter(part => part && !connectors.has(part)))];
@@ -51,6 +53,7 @@
         }
         results.append(card);
       });
+      if (legalNote) legalNote.hidden = matches.length === 0;
     });
   });
   const code = new URLSearchParams(window.location.search).get('codigo');
