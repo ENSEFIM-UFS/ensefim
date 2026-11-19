@@ -5,6 +5,7 @@
   const counts = new Map();
   records.forEach(item => counts.set(normalizeCode(item.codigo), (counts.get(normalizeCode(item.codigo)) || 0) + 1));
   const valid = records.filter(item => counts.get(normalizeCode(item.codigo)) === 1 && item.situacao === 'emitido');
+  const searchable = valid.filter(item => !item.somenteValidacao);
   const appendText = (parent, tag, content) => {
     const element = document.createElement(tag); element.textContent = content; parent.append(element); return element;
   };
@@ -22,12 +23,13 @@
       const nameQuery = normalizeName(input);
       const connectors = new Set(['DA', 'DAS', 'DE', 'DO', 'DOS', 'E']);
       const nameParts = [...new Set(nameQuery.split(' ').filter(part => part && !connectors.has(part)))];
-      const exactCode = valid.some(item => normalizeCode(item.codigo) === normalizeCode(input));
+      const available = validation ? valid : searchable;
+      const exactCode = available.some(item => normalizeCode(item.codigo) === normalizeCode(input));
       if (!validation && !exactCode && nameParts.length < 2) {
         status.textContent = 'Digite seu nome e pelo menos um sobrenome ou segundo nome, ou informe o código completo do certificado.';
         return;
       }
-      const matches = valid.filter(item => normalizeCode(item.codigo) === normalizeCode(input) ||
+      const matches = available.filter(item => normalizeCode(item.codigo) === normalizeCode(input) ||
         (!validation && nameParts.length >= 2 && (() => {
           const normalizedName = normalizeName(item.nome);
           if (normalizedName === 'ARIADNY THAYLA MACHADO') return false;

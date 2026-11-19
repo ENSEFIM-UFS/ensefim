@@ -14,6 +14,8 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A bas
 
 As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta.
 
+A aba **Premiação** usa **PARTICIPANTE** como titular e **PREMIAÇÃO** como tipo. Seus PDFs são conferidos pelos links oficiais da planilha. Esses registros aparecem apenas em **Valide o certificado**, mediante o código completo.
+
 Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, uma coluna com o nome do titular e **LINK DO CERTIFICADO**. Nas abas de trabalhos, o titular é **Apresentador**. As abas de palestrantes, participação e visitas técnicas usam **PALESTRANTE**. O importador também aceita **Nome** ou a coluna indicada na configuração da fonte. **TÍTULO DO TRABALHO** e **TÍTULO DA PALESTRA** são opcionais. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
 
 Execute na raiz do projeto:

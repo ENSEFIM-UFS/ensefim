@@ -42,5 +42,12 @@
     "planilhaId": "1tCeh_59gaex7OrVpUtQ-dzCqE2gBVQQYa3GEmnuriF0",
     "gid": "2062676861",
     "pastaId": "12kHLxdWHipPP1PFmZKRWF1W9D-lkO4_l"
+  },
+  {
+    "planilhaId": "1tCeh_59gaex7OrVpUtQ-dzCqE2gBVQQYa3GEmnuriF0",
+    "gid": "824049313",
+    "colunaNome": "PARTICIPANTE",
+    "colunaTipo": "PREMIAÇÃO",
+    "somenteValidacao": true
   }
 ]

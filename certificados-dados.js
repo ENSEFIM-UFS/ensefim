@@ -1903,5 +1903,59 @@ window.ENSEFIM_CERTIFICADOS = [
         "trabalho":  "",
         "arquivoId":  "10TDTvEHuenYqoTOqxIjXgNNuycqnHG7T",
         "situacao":  "emitido"
+    },
+    {
+        "codigo":  "20260801",
+        "nome":  "Lizandra de Almeida Oliveira",
+        "tipo":  "Melhor Apresentação Oral",
+        "trabalho":  "COMPARAÇÃO DA DOSE GLANDULAR MÉDIA INDICADA POR MAMÓGRAFO DIGITAL COM A ESTIMADA PELO MÉTODO DE DANCE",
+        "arquivoId":  "1nMe8usf8TZaz54cfhhBC-OFSIdLzLuC4",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
+    },
+    {
+        "codigo":  "20260802",
+        "nome":  "Sara Verônica Matos Santos",
+        "tipo":  "Melhor Apresentação Pôster",
+        "trabalho":  "LESÕES RADIOINDUZIDAS ASSOCIADAS A PROCEDIMENTOS INTERVENCIONISTAS GUIADOS POR FLUOROSCOPIA: REVISÃO DA LITERATURA",
+        "arquivoId":  "1b_ewleBbtGaEcuPtdGUECqTaLttduQvu",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
+    },
+    {
+        "codigo":  "20260803",
+        "nome":  "Lizandra de Almeida Oliveira",
+        "tipo":  "1º Lugar",
+        "trabalho":  "COMPARAÇÃO DA DOSE GLANDULAR MÉDIA INDICADA POR MAMÓGRAFO DIGITAL COM A ESTIMADA PELO MÉTODO DE DANCE",
+        "arquivoId":  "18GDU8kDciyzsgVZgF9MrxLoz7JpVPthv",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
+    },
+    {
+        "codigo":  "20260804",
+        "nome":  "Maria Clara Cabral Soares",
+        "tipo":  "2º Lugar",
+        "trabalho":  "FUNDAMENTOS FÍSICOS E TECNOLÓGICOS DA ULTRASSONOGRAFIA QUANTITATIVA HEPÁTICA NA MASLD: UMA REVISÃO DE ESCOPO",
+        "arquivoId":  "1rIUhUs3iRj2ASjzShjZX2zhdRXSPFXoO",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
+    },
+    {
+        "codigo":  "20260805",
+        "nome":  "Victória do Carmo Silva",
+        "tipo":  "3º Lugar",
+        "trabalho":  "IMPACTO DA GEOMETRIA DOS SIMULADORES DE PMMA NA AVALIAÇÃO DA RAZÃO CONTRASTE-RUÍDO EM MAMOGRAFIA DIGITAL",
+        "arquivoId":  "1r193mX7q2bufMLASfDkK0qQm5Rjy7DKl",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
+    },
+    {
+        "codigo":  "20260806",
+        "nome":  "Maryane Santos Ferreira",
+        "tipo":  "Menção Honrosa",
+        "trabalho":  "APRENDIZADO PROFUNDO PARA LEITURA AUTOMÁTICA DO TESTE DE CONSTÂNCIA EM MAMOGRAFIA: AVALIAÇÃO PROSPECTIVA EM ROTINA COM FANTOMAS ACR E CBR",
+        "arquivoId":  "1ME0IiWdzIKDuPFCIOS-fq29AJwFoR_9U",
+        "situacao":  "emitido",
+        "somenteValidacao":  true
     }
 ];

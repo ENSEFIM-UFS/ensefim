@@ -10,7 +10,9 @@ foreach ($source in $sources) {
   $response = Invoke-WebRequest -Uri $url -UseBasicParsing -Headers @{ 'Cache-Control' = 'no-cache'; Pragma = 'no-cache' }
   $csv = [Text.Encoding]::UTF8.GetString($response.RawContentStream.ToArray())
   $rows = @($csv | ConvertFrom-Csv)
-  $folder = (Invoke-WebRequest -Uri ('https://drive.google.com/drive/folders/' + $source.pastaId) -UseBasicParsing).Content
+  $folder = if ($source.pastaId) {
+    (Invoke-WebRequest -Uri ('https://drive.google.com/drive/folders/' + $source.pastaId) -UseBasicParsing).Content
+  }
   $embeddedFolder = $null
   foreach ($row in $rows) {
     $code = ([string]$row.'NÚMERO DO CERTIFICADO').Trim().ToUpperInvariant()
@@ -24,7 +26,10 @@ foreach ($source in $sources) {
     $link = ([string]$row.'LINK DO CERTIFICADO').Trim()
     if (-not $name -or $link -notmatch '^https://drive\.google\.com/file/d/([A-Za-z0-9_-]+)/') { throw "Nome ou PDF ausente: $code" }
     $fileId = $Matches[1]
-    if (-not $folder.Contains($fileId)) {
+    if (-not $source.pastaId) {
+      $pdf = Invoke-WebRequest -Uri "https://drive.google.com/file/d/$fileId/view" -UseBasicParsing
+      if ($pdf.Content -notmatch 'application/pdf') { throw "PDF público não encontrado pelo link oficial: $code" }
+    } elseif (-not $folder.Contains($fileId)) {
       # A listagem principal do Drive pode mostrar apenas os primeiros arquivos.
       if ($null -eq $embeddedFolder) {
         $embeddedUrl = 'https://drive.google.com/embeddedfolderview?id=' + $source.pastaId
@@ -35,7 +40,12 @@ foreach ($source in $sources) {
     $codes[$code] = $true
     $title = ([string]$row.'TÍTULO DO TRABALHO').Trim()
     if (-not $title) { $title = ([string]$row.'TÍTULO DA PALESTRA').Trim() }
-    $records += [ordered]@{ codigo = $code; nome = $name; tipo = $source.tipo; trabalho = $title; arquivoId = $fileId; situacao = 'emitido' }
+    $type = $source.tipo
+    if ($source.colunaTipo) { $type = ([string]$row.($source.colunaTipo)).Trim() }
+    if (-not $type) { throw "Tipo de certificado ausente: $code" }
+    $record = [ordered]@{ codigo = $code; nome = $name; tipo = $type; trabalho = $title; arquivoId = $fileId; situacao = 'emitido' }
+    if ($source.somenteValidacao) { $record['somenteValidacao'] = $true }
+    $records += $record
   }
   if ($rows.Count -eq 0) { throw 'A planilha não retornou registros; a base anterior foi preservada.' }
 }
