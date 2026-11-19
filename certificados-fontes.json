@@ -30,5 +30,17 @@
     "gid": "1482319614",
     "pastaId": "1i_PNp0G-VKJM-gbpRm5YmXo_6dVyiaTw",
     "colunaNome": "Avaliador"
+  },
+  {
+    "tipo": "Participação",
+    "planilhaId": "1tCeh_59gaex7OrVpUtQ-dzCqE2gBVQQYa3GEmnuriF0",
+    "gid": "1745694064",
+    "pastaId": "1XuPvg5salvZtOuc2Ltdw18Uj0tPGsIoX"
+  },
+  {
+    "tipo": "Visita técnica",
+    "planilhaId": "1tCeh_59gaex7OrVpUtQ-dzCqE2gBVQQYa3GEmnuriF0",
+    "gid": "2062676861",
+    "pastaId": "12kHLxdWHipPP1PFmZKRWF1W9D-lkO4_l"
   }
 ]

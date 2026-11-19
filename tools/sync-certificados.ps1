@@ -11,6 +11,7 @@ foreach ($source in $sources) {
   $csv = [Text.Encoding]::UTF8.GetString($response.RawContentStream.ToArray())
   $rows = @($csv | ConvertFrom-Csv)
   $folder = (Invoke-WebRequest -Uri ('https://drive.google.com/drive/folders/' + $source.pastaId) -UseBasicParsing).Content
+  $embeddedFolder = $null
   foreach ($row in $rows) {
     $code = ([string]$row.'NÚMERO DO CERTIFICADO').Trim().ToUpperInvariant()
     if (-not $code) { continue }
@@ -23,7 +24,14 @@ foreach ($source in $sources) {
     $link = ([string]$row.'LINK DO CERTIFICADO').Trim()
     if (-not $name -or $link -notmatch '^https://drive\.google\.com/file/d/([A-Za-z0-9_-]+)/') { throw "Nome ou PDF ausente: $code" }
     $fileId = $Matches[1]
-    if (-not $folder.Contains($fileId)) { throw "PDF não encontrado na pasta oficial: $code" }
+    if (-not $folder.Contains($fileId)) {
+      # A listagem principal do Drive pode mostrar apenas os primeiros arquivos.
+      if ($null -eq $embeddedFolder) {
+        $embeddedUrl = 'https://drive.google.com/embeddedfolderview?id=' + $source.pastaId
+        $embeddedFolder = (Invoke-WebRequest -Uri $embeddedUrl -UseBasicParsing).Content
+      }
+      if (-not $embeddedFolder.Contains("/file/d/$fileId/")) { throw "PDF não encontrado na pasta oficial: $code" }
+    }
     $codes[$code] = $true
     $title = ([string]$row.'TÍTULO DO TRABALHO').Trim()
     if (-not $title) { $title = ([string]$row.'TÍTULO DA PALESTRA').Trim() }

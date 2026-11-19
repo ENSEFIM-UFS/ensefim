@@ -1,6 +1,6 @@
 # Certificados do ENSEFIM
 
-A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui 19 certificados da comissão científica, 13 da comissão organizadora, 17 de palestrantes, 10 de apresentação oral e 9 de apresentação de pôster da planilha fornecida pela organização, conferidos nas respectivas pastas do Drive.
+A página `certificados.html` funciona no site estático, sem Apps Script. A base inclui certificados das comissões científica e organizadora, de palestrantes, de apresentações orais e de pôsteres, de participação e de visitas técnicas. Os registros vêm da planilha da organização e são conferidos nas respectivas pastas do Drive.
 
 ## Consultas
 
@@ -12,9 +12,9 @@ A página `certificados.html` funciona no site estático, sem Apps Script. A bas
 
 ## Atualizar e acrescentar categorias
 
-As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta. Acrescente fontes quando as planilhas e PDFs das demais categorias estiverem prontos: visita técnica e participação.
+As fontes estão em `certificados-fontes.json`, com tipo, ID da planilha, ID da aba (`gid`, opcional) e ID da pasta.
 
-Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, **Apresentador** (trabalhos) , **PALESTRANTE** (palestrantes) ou **Nome** (demais categorias) e **LINK DO CERTIFICADO**. **TÍTULO DO TRABALHO** ou **TÍTULO DA PALESTRA** é opcional. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
+Cada planilha precisa ter **NÚMERO DO CERTIFICADO**, uma coluna com o nome do titular e **LINK DO CERTIFICADO**. Nas abas de trabalhos, o titular é **Apresentador**. As abas de palestrantes, participação e visitas técnicas usam **PALESTRANTE**. O importador também aceita **Nome** ou a coluna indicada na configuração da fonte. **TÍTULO DO TRABALHO** e **TÍTULO DA PALESTRA** são opcionais. Os códigos devem ser exclusivos entre todas as categorias. Os links devem apontar para PDFs na pasta pública correspondente.
 
 Execute na raiz do projeto:
 
