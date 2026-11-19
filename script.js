@@ -51,6 +51,17 @@ document.querySelectorAll('[data-program-link]').forEach((link) => {
   });
 });
 
+if (programTabs.length) {
+  const selectLinkedProgramDay = () => {
+    const tab = programTabs.find((item) => `#${item.id}` === window.location.hash);
+    if (!tab) return;
+    selectProgramDay(tab);
+    tab.scrollIntoView({ block: 'center' });
+  };
+  selectLinkedProgramDay();
+  window.addEventListener('hashchange', selectLinkedProgramDay);
+}
+
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.main-nav a')];
 const scrollSpyLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
