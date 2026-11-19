@@ -1286,7 +1286,7 @@ a.sponsor-logo:focus-visible { outline: 3px solid var(--orange); outline-offset:
 .works-text li { margin-bottom: 9px; padding-left: 5px; }
 .works-text li::marker { color: var(--orange); }
 .works-result-update { color: var(--navy); background: #ffe066; padding: 2px 6px; border-radius: 4px; font-weight: 700; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-.works-text .works-results { display: grid; gap: 32px; max-width: 31rem; margin-inline: auto; }
+.works-text .works-results { display: grid; gap: 32px; }
 .works-text .works-results p { margin: 0; }
 .works-results a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 .works-text .works-awards {
@@ -1295,7 +1295,7 @@ a.sponsor-logo:focus-visible { outline: 3px solid var(--orange); outline-offset:
 }
 .works-awards > span { padding: 8px 16px; border-radius: 999px; background: #17394e; color: #fff; }
 .works-awards > span strong { color: inherit; }
-.works-approved { display: grid; justify-items: start; gap: 4px; margin-inline-start: 20px; }
+.works-approved { display: grid; justify-items: start; gap: 4px; }
 .works-text .works-proceedings {
   justify-self: center; padding: 8px 14px; border-radius: 6px; background: #eaf4f8;
 }
